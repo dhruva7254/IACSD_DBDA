@@ -1,0 +1,519 @@
+Alan turing machine 
+The Turing machine is a theoretical model of a computer proposed by mathematician Alan Turing in 1936.
+It consists of an infinitely long tape divided into cells, a read-write head that can move along the tape, and a set of rules that govern how the head interacts with the tape.
+The Turing machine is widely considered to be the theoretical basis for modern computers and is an important concept in the field of computer science
+
+Enigma:
+Enigma was an electromechanical machine used by the Germans during World War II to encrypt and decrypt secret messages. The machine was invented by a German engineer, Arthur Scherbius, in the early 20th century.
+
+ 
+Artificial Intelligence 
+AI is a field of computer science focused on creating machines that can perform tasks that normally require human intelligence, such as learning, problem-solving, and decision-making. 
+AI technologies include machine learning, natural language processing, computer vision, and robotics. 
+AI has a wide range of applications in areas such as healthcare, finance, education, transportation, and entertainment.
+AI involves developing algorithms and computer programs that can mimic human cognitive abilities and decision-making processes. 
+Applicatons of AI are Natural language processing, ML, Computer vision, Robotics
+
+
+Open AI: 
+OpenAI is an artificial intelligence research laboratory consisting of a team of researchers and engineers dedicated to advancing AI in a safe and beneficial way. 
+The organization was founded in 2015 by a group of prominent technology entrepreneurs and researchers, and has since become a leader in the field of AI research. OpenAI has produced a number of significant breakthroughs in areas such as natural language processing, reinforcement learning, and robotics, and has also developed a range of powerful tools and frameworks for building AI applications.
+
+Machine learning:
+Machine learning is a type of artificial intelligence (AI) that enables computer systems to learn and improve from experience, without being explicitly programmed. Machine learning algorithms can be trained on large datasets to identify patterns, make predictions, and automate decision-making processes. 
+Machine learning is used in a wide range of applications, including image recognition, natural language processing, recommendation systems, and predictive analytics.
+
+
+Multi tenancy :
+Multi-tenancy is a software architecture where a single instance of a software application serves multiple customers, or "tenants." 
+Each tenant’s data is isolated and secured from other tenants, and each tenant can configure the applicati on to their specific needs. 
+Multi-tenancy is commonly used in cloud computing, where it allows multiple customers to share the same resources and infrastructure while maintaining data privacy and security.
+
+
+Metadata 
+Metadata is information that describes data. It provides context and additional information 
+about a dataset, such as its structure, format, and content. 
+Metadata is typically used to help people and machines understand and use data more effectively. 
+
+Cloud:
+cloud-it's a term used to describe a global network of servers, each with a unique function. The cloud is not a physical entity, but instead is a vast network of remote servers around the globe which are hooked together and meant to operate as a single ecosystem.
+
+Computing 
+Computing is the act of calculating something––adding it up, multiplying it, or doing more complex math functions to it. Computers are named for this process, because they can compute faster than most people. The verb compute comes from a Latin word for pruning.
+
+
+Cloud Computing:
+Cloud computing refers to the delivery of computing resources, including software, storage, 
+and processing power, over the internet. This means that instead of storing and processing 
+data on a local computer or server, users can access these resources through a network of 
+remote servers hosted by third-party providers.
+
+
+Cluster
+In computing, a cluster is a group of interconnected computers that work together to perform a common task or provide a common service. 
+The computers in a cluster are typically connected through a local area network (LAN) and are managed as a single system.
+Clusters are often used in high-performance computing (HPC) applications, where large amounts of processing power and storage are required. 
+By combining the processing power and storage capacity of multiple computers, clusters can provide significantly greater computing power and storage capacity than individual computers
+
+
+Public Cloud 
+A public cloud is a type of cloud computing service in which computing resources, such as 
+virtual machines, storage, and networking infrastructure, are offered by a third-party provider 
+over the internet. 
+
+Microsoft Cloud:-
+Microsoft Cloud a suite of cloud computing services provided by Microsoft. 
+Microsoft Cloud includes a range of services such as Microsoft Cloud is a suite of cloud computing services provided by Microsoft. 
+Microsoft includes a range of services such as computing, storage, analytics, and networking, among others.
+Some of the main services offered by Microsoft Cloud include:
+ 1.Azure, 2.Microsoft 365, 3.Dynamic 365.
+
+
+Azure:-
+Microsoft Azure is a cloud computing platform offered by Microsoft, providing a wide range of cloud-based services and solutions to businesses and individuals.
+Azure offers a broad range of services, including compute, storage, databases, analytics, machine learning, security, and more.
+Azure has become one of the leading cloud computing platforms in the world, offering scalability, flexibility, and cost savings to organizations of all sizes.
+
+
+Hybrid cloud
+
+A hybrid cloud is a cloud computing environment that combines the use of both public and private cloud resources, allowing organizations to leverage the benefits of both cloud deployment models.
+In a hybrid cloud, some applications, data, and services are hosted in a private cloud, while others are hosted in a public cloud. 
+The two environments are connected via a secure network connection, which enables data and applications to be seamlessly transferred between them.
+
+
+Gcp(Google Cloud Platform):-
+GCP is designed to provide scalable and reliable cloud-based solutions for businesses of all sizes.  Some of the main services offered by GCP include:
+1.Compute Engine, 2.App Engine, 3.Cloud Storage, 4.Cloud SQL, 5.Cloud Functions, 6.AI and Machine Learning.
+
+AWS:-
+AWS (Amazon Web Services) is a cloud computing platform and a collection of services provided by Amazon. 
+AWS offers a wide range of services, including  computing, storage, networking, and databases. 
+AWS is designed to provide scalable and reliable cloud-based solutions for businesses of all sizes. 
+
+
+Private Cloud 
+A private cloud is a cloud computing service model that provides dedicated computing resources, such as servers, storage, and networking infrastructure, for a single organization. 
+Unlike a public cloud, which offers resources that are shared among multiple customers, a private cloud is designed to provide a more secure and customized computing environment  for a single organization. 
+
+Pay As you Go:
+Pay-as-you-go is a payment model that allows customers to pay only for the services they use. 
+This model is commonly used in cloud computing and telecommunications services. 
+Pay-as-you-go services are usually charged based on usage and can be scaled up or down as needed.
+Pay-as-you-go is a pricing model used by many cloud service providers that allows customers to pay only for the computing resources they actually use. In other words, customers are charged based on the amount of computing resources they consume, rather than a flat rate or a fixed contract.
+
+subscription services:
+Subscription services are services that are provided to customers on a recurring basis. 
+Customers pay a fee to access these services for a certain period of time. 
+Examples of subscription services include streaming services like Netflix and Spotify, and software services like Microsoft Office 365 and Adobe Creative Cloud.
+
+
+Data Engineer
+A data engineer is a professional who designs, develops, and maintains the infrastructure necessary for processing and managing large volumes of data. They are responsible for building and maintaining data pipelines that enable the efficient processing and analysis of Data
+
+Datacluster:
+A data cluster is a group or collection of related data points or observations that share similar characteristics or attributes. 
+Clustering is a common technique used in data mining and machine learning to identify patterns or structures within a dataset.
+
+Hadoop:
+Hadoop is an open-source framework for distributed storage and processing of large datasets. 
+It was first developed by Apache Software Foundation and is now maintained by the Apache Hadoop project.
+
+
+
+Data Science
+Data science is an interdisciplinary field that involves the extraction of insights and  knowledge from data using various techniques and tools from statistics, mathematics, computer science, and domain expertise. 
+It involves the use of advanced statistical and computational methods to analyze large and complex datasets, with the goal of discovering patterns, making predictions, and deriving insights that can be used to drive business  decisions
+
+Data Scientist: 
+Data Scientist uses statistics, scientific techniques, scientific processes and methods to extract useful data and insights from structured as well as unstructured data.
+
+
+Data Structure 
+it is a specialized format for organizing, processing, retrieving and storing data. 
+There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. 
+Data structures make it easy for users to access and work with the data they need in appropriate ways.
+Data structure is a way of organizing and storing data in a compute.
+
+
+Data Algorithms 
+Data algorithms refer to mathematical formulas and rules that are used to process and analyze data in order to extract meaningful insights and make decisions. Algorithms are a  critical part of data science and machine learning, as they enable machines to learn from and  make predictions based on large amounts of data. 
+An algorithm is a step-by-step procedure or set of instructions for solving a problem or performing a task.
+Algorithms are used to solve problems and perform tasks such as sorting, searching, and data analysis. 
+Algorithms can be written in programming languages and executed on computers, allowing for fast and efficient processing of large amounts of data.
+
+
+Software:-
+Software refers to a set of instructions, programs, and data that enable a computer or other digital device to perform specific tasks or operations.
+Software is created using programming languages and can be categorized into two main types:
+1.Sysytem Software 2.Application Software
+
+
+Data Processing 
+Data processing refers to the process of transforming raw data into usable and meaningful information. 
+Data Processing involves a series of steps that take raw data and convert it into a format that can be easily analyzed, interpreted, and used for decision-making. 
+A data processing center is a centralized location where data is processed and analyzed using specialized software and hardware. 
+It is designed to handle large volumes of data and perform complex data processing tasks such as data transformation, data analysis, and data modeling.
+
+Data Distribution 
+Data distribution refers to the process of sharing or replicating data across multiple nodes or 
+systems in a network. 
+DataProcessing allows for more efficient and reliable access to data, as well as 
+improved scalability and availability.
+
+Data integrity: 
+Data Integrity is the overall accuracy, completeness, and consistency of data. 
+Data integrity also refers to the safety of data in regard to regulatory compliance — such as GDPR compliance — and security. 
+Data Integrity is maintained by a collection of processes, rules, and standards implemented during the design phase.
+
+Data modelling:
+Data modeling is important for several reasons. First, it helps to ensure that the data is organized and structured in a way that supports the business needs of the organization. 
+Second, it helps to identify potential issues or inconsistencies in the data, which can be addressed before the data is deployed in a production environment. 
+Finally, it provides a framework for communication between different stakeholders inn the organization, such as business analysts, developers, and database administrators, who may have different perspectives on the data and its relationships.
+
+
+Datamining :
+Data mining is the process of extracting useful and relevant information from large data sets. 
+It involves analyzing and exploring data from different perspectives, and discovering patterns, trends, and relationships in the data that may not be immediately obvious.  
+Data mining is used in many different fields, including business, finance, healthcare, marketing, and science. 
+For example, in business, data mining can be used to analyze customer behavior and purchasing patterns, and to identify which products or services are most popular or profitable
+
+Data monitoring
+Data monitoring refers to the process of observing, tracking, and analyzing data over time to ensure that it is accurate, complete, and up-to-date. Data monitoring can be performed manually or automatically using specialized software tools. Data monitoring can be done by data scientist,it professionals,depending on the organization's structure and needs.
+
+Data pipelines:
+Data pipeline is a set of processes that are used to extract, transform, and load data from various sources into a target data store or database. 
+The pipeline can be thought of as a series of stages or steps that data goes through in order to be transformed and stored for analysis. 
+
+
+Data Privacy:
+Data privacy refers to the protection of personal information or data from unauthorized access, use, disclosure, or destruction.
+ Personal data can include any information that can be used to identify an individual, such as their name, address, date of birth, social security number, or any other unique identifier
+
+
+Datacenters : 
+A data center is a facility used to house computer systems and associated components, such as telecommunications and storage systems. 
+It is designed to provide a secure and reliable environment for storing, processing, and managing large amounts of data.
+Data centers are used by organizations of all sizes, from small businesses to large enterprises, and can be located on-premises or off-premises in a cloud-based environment. 
+
+Server:-
+A server is a computer or a software application that provides services to other computers or devices, known as clients, over a network. 
+A server can provide a variety of services, including data storage, processing power, applications, websites, and communication tools.
+
+Rack Server:
+A rack server is a type of server that is designed to be mounted in a rack or cabinet. Rack 
+servers are commonly used in data centers and other enterprise environments, where space 
+is limited and large numbers of servers need to be deployed in a compact and efficient 
+manner.
+A rack server is a type of server that is designed to be mounted on a standard 19-inch rack. 
+Rack servers are typically slim and vertical, allowing multiple servers to be stacked closely together to ma
+ximize space efficiency. 
+Rack servers are commonly used in data centers and server rooms for their ease of installation, scalabilit y, and manageability. 
+
+
+blade server 
+A blade server is a type of server that houses multiple thin, modular circuit boards or "blades" within a single chassis. 
+Each blade is a self-contained server with its own processors, memory, storage, and networking. 
+Blade servers are commonly used in data centers to save space, reduce power consumption, and simplify server management.
+A blade server is a type of server that is designed to be more space-efficient and power-efficient than traditional rack-mounted servers. 
+Blade servers are modular, meaning that they consist of a chassis that can hold multiple blade servers, each of which is a self-contained server on a small circuit board. 
+Blade servers are inserted into the chassis and share resources such as power, cooling, and networking.
+
+
+.Motherboard
+A motherboard, also known as a mainboard or system board, is a printed circuit board that connects and allows communication between various components in a computer or other electronic device. It serves as a central hub for all hardware components to communicate with each other
+
+
+Microprocessor
+A microprocessor, also known as a CPU (central processing unit), is a small electronic chip that serves as the brain of a computer or other electronic device. It is 
+responsible for processing instructions and performing calculations for the device, including executing software programs and managing input/output operations.
+
+CPU:
+(central processing unit) is the primary component of a computer system that carries out instructions and performs arithmetic and logical operations.
+A CPU is the primary processing unit in a computer, responsible for executing instructions and managing the flow of data within the system.
+a CPU is optimized for general-purpose computing
+
+ALU:
+Arithmetic Logic Unit (ALU) is a digital circuit within a computer's central processing unit (CPU) that performs arithmetic and logic operations on binary numbers. 
+The ALU is responsible for performing the basic arithmetic operations like addition, subtraction, multiplication, and division, as well as logical operations like AND, OR, NOT, and XOR.
+
+Cores - 
+In computing, a core refers to a processing unit within a CPU (Central Processing Unit) that is capable of executing instructions.
+A CPU can have one or more cores, and each core acts as an independent processing unit capable of handling multiple threads of execution simultaneously.
+
+
+
+GPU:
+A GPU (Graphics Processing Unit) is a specialized processor designed to perform complex mathematical operations required for rendering graphics and images on a display
+a GPU is optimized for parallel processing and is much better suited for handling large amounts of data in parallel. 
+In recent years, GPUs have become increasingly important in fields such as machine learning and data science, where they are used to accelerate training and inference of complex models.
+
+
+Hard disk drives (HDD): 
+HDDs are a type of magnetic storage device that uses spinning disks to store and 
+access data.
+
+Solid-state drives (SSD):
+SSDs use flash memory to store and access data and are typically faster and more  reliable than HDDs.
+A Solid State Drive (SSD) is a newer type of computer storage that uses flash memory to read and write data digitally. 
+SSDs store data using flash-based memory, which is much faster than the traditional hard disks they’ve come to replace. 
+
+eSata:
+eSATA stands for External Serial Advanced Technology Attachment which is an extension of the Serial Advanced Technology Attachment (SATA or serial ATA). 
+It enables SATA drives to be attached externally. eSATA external hard drive is a type of SATA interface hard drives.
+
+Network Attached Storage (NAS): 
+NAS is a storage system that allows multiple devices to access data stored  on a central server.
+
+Tape storage: Tape storage is a traditional method of data storage that uses magnetic tape to store and  access data.
+
+
+Datastorage:
+Data storage refers to the process of storing and preserving digital information for future use.
+Data can be stored in a variety of formats, including text, images, audio, and video, and can be stored on a range of devices, including hard disk drives, solid-state drives, and cloud-based storage systems.
+
+
+Datalake :
+Dtalake is lage centralized repository that allows organisation to stored, process, analyse large amount of structured or unstructured data.
+Datalakes are designed to stored data in its raw forms.
+A data lake is a large, centralized repository that stores a wide variety of structured, semistructured, and unstructured data at scale. 
+Data lakes are designed to support big data analytics, machine learning, and other advanced data processing techniques by providing a single source of truth for all data within an organization. 
+
+
+Database:
+Database is collection of organized data which will be stored and manage on computer system.
+Databases are managed by database management systems which provides the set of tools which create,maintain, quering the data base.
+
+MySQL:
+MySQL is a free and open-source relational database management system (RDBMS) that uses SQL (Structured Query Language) as its language for managing and manipulating data. It was first released in 1995 and is now owned by Oracle Corporation.
+
+
+Mongodb
+MongoDB is a cross-platform, open-source document-oriented NoSQL database program that uses JSON-like documents with optional schemas. It is designed for scalability, high availability, and performance, and is widely used by businesses and organizations of all sizes  for storing and processing large volumes of unstructured data.
+
+
+SQL:
+SQL (Structured Query Language) is a programming language that is used to manage and manipulate relational databases.
+SQL is a programming language used for managing and manipulating relational databases. 
+It was first developed in the 1970s by IBM, and has since become the standard language used for working with databases.
+
+Data analytics
+
+Data analytics is the process of examining large sets of data to uncover patterns, trends, and insights that can inform business decisions.
+It involves using statistical and computational techniques to analyze data from various sources and extract meaningful information.
+Data analytics has become increasingly important in today's data-driven world.
+Data Analytics is used in a variety of industries such as healthcare, finance, marketing, and more.
+
+Data cleaning
+
+Data cleaning is the process of identifying and correcting or removing errors, inconsistencies, and inaccuracies in data.
+Data cleaning is a critical step in the data analysis process, as it ensures that the data is accurate and reliable.
+Data cleaning involves tasks such as identifying missing data, removing duplicates, correcting formatting errors, and dealing with outliers, among others.
+
+
+Data extraction: 
+This involves identifying and retrieving data from various sources, such as databases, websites, and files. 
+It typically involves collecting structured or unstructured data, which can then be transformed and cleaned as needed.
+
+
+On primise environment :
+refers to computing environment where an organisation owns and oprates its own hardware, infrastucture, software rather tha cloud based or hosted environment 
+
+
+Hosted environment :
+A hosted environment is a computing environment in which a third-party provider hosts and manages the hardware, software, and infrastructure required to run an application or service.
+
+
+
+Infrastructure:-
+infrastructure refers to the hardware, software, and network components that are necessary for the operation of IT services and applications. 
+This includes servers, storage systems, databases, operating systems, virtualization software, and networking equipment. 
+
+Software as a service :
+Saas is a cloud computing model where software applications delivered to the customers on the internet typically on the subscription basis. 
+with the help of saas users can access the software aaplictions from anywhere with internet connection ,without the need to install or maintained the software on their own computers.
+
+
+Microsoft 365:
+Microsoft 365 is a cloud-based subscription service from Microsoft that provides users with a suite of productivity and collaboration tools, including Word, Excel, PowerPoint, and Outlook.
+Microsoft 365 also includes cloud-based services such as OneDrive for file storage and sharing, Teams for messaging and video conferencing, and SharePoint for document management and collaboration. 
+Microsoft 365 can be accessed from anywhere with an internet connection, and offers flexible pricing plans for individuals, small businesses, and large enterprises.
+
+Microsoft 365 co pilot:
+Microsoft 365 Co pilot is a new AI-powered productivity tool that is integrated into the Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, Teams and more12. It combines the power of large language models (LLMs) with your data in the Microsoft Graph—your calendar, emails, chats, documents, meetings, and more—to turn your words into a powerful productivity tool.
+
+
+
+On Demand services 
+On-demand services refer to services that are available to customers or users whenever they 
+need them, without requiring a prior appointment or reservation. These services are typically 
+delivered through digital platforms or mobile applications, and can range from 
+transportation and food delivery to home cleaning and handyman services. 
+
+
+plateform as a service :
+It allows programmers to easily create, test, run, and deploy web applications.
+Platform as a service (PaaS) is a cloud computing model that provides users with a platform 
+to develop, run, and manage applications without the need to build and maintain the 
+underlying infrastructure.
+PaaS providers offer a range of services and tools to support the development, deployment, and scaling of applications. 
+
+
+Kubernetes
+
+Kubernetes is an open-source platform for container orchestration, developed by Google.
+Kubernetes allows organizations to automate the deployment, scaling, and management of containerized applications across multiple nodes and clusters.
+Kubernetes has become a popular tool in modern DevOps environments, enabling organizations to streamline their application deployment and management processes, increase scalability and availability, and reduce costs.
+
+
+Docker
+
+Docker is an open-source platform for containerization, which allows developers to create, deploy, and run applications in containers.
+Containers are lightweight, portable, and self-contained environments that can run on any platform, enabling developers to build applications that can run anywhere.
+Docker has become a popular tool in modern DevOps environments, as it provides a fast and efficient way to package and deploy applications, while also reducing infrastructure costs and improving application scalability and availability.
+
+
+Infrastructure as a Service 
+Infrastructure as a Service (IaaS) is a cloud computing service model that provides customers 
+with access to virtualized computing resources over the internet. 
+This includes access to virtualized servers, storage, and networking infrastructure. 
+
+Large language model :
+LLM is an artificial intalligence technique which is trained to understand and trained the natural language such as text or speech.
+Large Language Models (LLMs) are machine learning models trained on vast amounts of textual data to generate human-like language responses. 
+They use advanced natural language processing techniques, such as deep learning and attention mechanisms, to understand and generate human language. 
+LLMs are used in a wide rang of applications, including chatbots, language translation, content creation, 
+and even scientific research.
+
+Chat GPT
+ChatGPT is a large language model developed by OpenAI based on the GPT (Generative Pre-trained Transformer) architecture. 
+ChatGPT is designed to generate human-like responses to natural language prompts, such as questions or statements.
+ChatGPT is an example of the recent advances in natural language processing (NLP). 
+However, like all AI systems, it is not perfect and may make errors or generate inappropriate responses in some situations.
+
+
+Prompt engineering
+Prompt engineering is a term used in the field of natural language processing (NLP) to refer to the process of designing and constructing prompts for machine learning models. 
+In the context of NLP, a prompt is a specific input that is provided to a language model in order to generate a desired output.
+
+AI prompt engineering is an effective way to get the desired output with an AI tool. Prompts come in various forms, such as statements, blocks of code, and strings of words. This method of utilizing prompts was invented by people with the intention of eliciting responses from AI models. It serves as a starting point for teaching the model to develop outputs that are appropriate to a given task.
+
+Interestingly, these prompts work in the same manner as they would on a person – prompting them to create an essay – and similarly, an AI application can use these prompts to produce work that is tailored for its purpose. In this way, prompt engineering has become an indispensable strategy for leveraging AI tools.
+
+When it comes to the actual prompt, text is currently the primary means of communication between the human and the AI. Using text commands enables you to tell the model what to perform. Top AI models like DALLE-E 2 and Stable Diffusion require you to describe the desired output, which acts as their primary prompt. On the other hand, language models like the new ChatGPT can use anything from a simple query to a complex proven with various facts placed throughout the prompt. In some cases, you can even use a CSV file with raw data as part of the input.
+
+The entire process of AI prompt engineering involves designing and creating prompts (input data) so the AI models can train on them to learn how to perform specific tasks. In this process, you must select the appropriate data type and formatting so the AI can understand it. Effective AI prompt engineering leads to high-quality training data that enables the AI model to accurately make predictions and decisions.
+
+Many of the top developments in AI prompt engineering took place with language models like GPT-2 and GPT-3. In 2021, novel tasks yielded impressive results thanks to the introduction of multitasking prompt engineering with natural language processing (NLP) datasets. Refined by language models that can accurately depict a logical thought process, zero-shot learning has been applied when cues such as “Let’s think step by step” are included in prompts; this further bolstered the success rate of multi-step reasoning efforts. Easier accessibility on both small and large scales was made possible through extensive open source notebooks and community driven image synthesis ventures.
+
+Some more big developments came In 2022 when machine learning models DALL-E, Stable Diffusion and Midjourney opened up a world of possibilities through text-to-image prompting. This technology allows people to bring their ideas to life with just their words as input.
+
+More recently, ChatGPT became open to the public and took the world by storm. ChatGPT is the most impressive AI language model we have seen to date. It relies on deep learning techniques to generate text based on the input you provide to it. The tool was trained on a massive collection of text data, which enables it to generate human-like responses to a wide range of text prompts.
+
+
+
+
+Virtualization 
+Virtualization is a technology that allows multiple virtual machines to run on a single physical machine. 
+Each virtual machine acts as a separate operating system, with its own resources such as CPU, memory,
+and storage. 
+Virtualization is used to improve resource utilization, reduce hardware costs, and increase flexibility and s
+calability in data centers and cloud computing environments.
+Virtualization is the process of creating a virtual (or simulated) version of something, such as an operating system, server, storage device, or network resource. 
+This virtual version behaves and operates as if it were a real physical resource, but is actually created and managed by software. 
+
+Virtual machine
+A virtual machine (VM) is a software-based emulation of a physical computer or server that allows multiple operating systems (OS) and applications to run on a single physical machine.
+Overall, virtual machines provide a cost-effective and flexible solution for running multiple operating systems and  applications on a single physical machine, while also providing enhanced security and isolation between workloads.
+
+Hypervisor 
+A hypervisor, also known as a virtual machine monitor (VMM)
+A Hypervisor is a software program that enables virtualization by creating and managing virtual machines (VMs) on a physical host machine. 
+
+Type 1 hypervisor
+
+Type 1 hypervisors, also known as bare-metal hypervisors, run directly on the host machine's hardware, without the need for a separate operating system. 
+This allows them to provide better performance and security than Type 2 hypervisors. 
+Examples of Type 1 hypervisors include VMware ESXi, Microsoft Hyper-V, and Citrix XenServer.
+
+Type 2 hypervisor:
+Type 2 hypervisors, also known as hosted hypervisors, run on top of a host operating system. 
+They are typically used for desktop virtualization or testing and development environments. 
+Examples of Type 2 hypervisors include Oracle VirtualBox, VMware Workstation, and Parallels Desktop for Mac.
+
+
+
+Day 2
+
+
+Scalability-----scale out , scale in
+Load Balancing
+Socket Programming
+Software Product PaintBrush Application (Desktop application) (Stand alone application)
+Software Service Microsoft 365, Google Apps(Online application)
+Desktop Computing(Personal Computing)
+Distributed Computing
+Portal
+BroadCasting
+End to End Services
+SSL (Secure Socker Layer)
+ETL (Extract , Transform,  Load)
+services expose  product feature on line which encapsute Product features
+
+
+
+
+
+Software As A service
+Microsoft 365
+Word 365
+Excel 365
+Teams
+etc.
+
+SharePoint
+
+
+
+
+
+
+
+
+Hands-on (Software As A Service)
+
+Create Collaborative Enviornment for Northwind Company using Google Apps(SAAS).
+
+1.Login to Google Apps using your gmail id.
+2.Create Knowledge Management Portal using Site app of Google Apps.
+3.Add Feedback form to accept feedback about servies provided from.
+  any user with email , contact number, phone,
+  and other feedback Points. Publish this form to other gmail users.
+4.Store infomration of Northwind Products to be sold out using Google spreadsheet as products.csv file.
+5. Create Company Policy Guidlines document using Google Docs app
+6. Design a web page in Google site created previously with links to Google document, spreadsheet, forms.
+7.Share site url with other Google users.
+8.Ensure other google users with permissions having access to content created by you using Google Apps.
+9.Allow multiple users to modify existing document.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

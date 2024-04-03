@@ -1,0 +1,14 @@
+Kindly write any 10 programs.
+1. Write a Shell Script to find maximum between two numbers.
+2. Write a Shell Script to find maximum between three numbers.
+3. Write a Shell Script to check whether a number is negative, positive or zero.
+4. Write a Shell Script to check whether a number is divisible by 5 and 11 or not.
+5. Write a Shell Script to check whether a number is even or odd.
+6. Write a Shell Script to check whether a year is leap year or not.
+7. Shell Script to print number between 1 to 10 in character format using switch-case.
+8. Shell Script to accept id from user to confirm department using switch-case.
+9. Shell Script to check password is correct or incorrect using switch-case.
+10. Shell Script to print day of week using switch-case.
+11. Shell Script to create calculator using switch-case.
+
+

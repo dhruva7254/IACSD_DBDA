@@ -1,0 +1,365 @@
+
+Yellow Pages
+Yellow pages are telephone directories of businesses, organized by category rather than alphabetically by business name, in which advertising is sold. The directories were originally printed on yellow paper, as opposed to white pages for non-commercial listings. The traditional term "yellow pages" is now also applied to online directories of businesses.
+
+Data engineering 
+Data engineering refers to the building of systems to enable the collection and usage of data.
+it is the practice of designing, building, and maintaining the infrastructure and systems that 
+support the storage, processing, and analysis of data. It involves the use of various technologies and tools to transform raw data into formats that can be used for business intelligence, machine learning, and other data-driven applications.
+
+Big data
+Big data refers to extremely large and complex data sets that traditional data processing tools and methods are inadequate to handle. Big data technologies and techniques are used to store, process, and analyze these data sets to extract insights and value.
+
+Data lake
+A data lake is a centralized repository that stores raw, unprocessed, and diverse data at any scale, allowing for flexible processing and analysis. It differs from a traditional data warehouse in that it allows for the storage of both structured and unstructured data in its native format, without requiring a predefined schema.
+
+Data pipeline
+A data pipeline is a sequence of steps that move data from one system or application to another, transforming and enriching it along the way. It is used to automate the movement and processing of data, ensuring that data is accurate, complete, and available in a timely manner for analytics and decision-making.
+
+Data streaming
+Data streaming is the continuous and real-time processing of data as it is generated, allowing for immediate insights and actions to be taken. It involves the ingestion, processing, and analysis of data in small, incremental pieces, rather than processing data in batches.
+
+Data cleaning
+Data cleaning is the process of identifying and correcting or removing inaccuracies, inconsistencies, and errors in data. It involves a range of techniques such as removing duplicates, handling missing values, correcting invalid values, and standardizing data formats.
+
+Data storage
+Data storage is the process of saving digital information on storage devices such as hard disk drives, solid-state drives, or cloud storage. It involves organizing, managing, and storing data in a secure and accessible manner for future use.
+
+BI tools
+Business Intelligence (BI) tools are software applications that enable organizations to gather, store, analyze, and visualize data from various sources to support decision-making. They provide interactive dashboards, reports, and visualizations that help users to explore data and gain insights.
+
+Data visualization
+Data visualization is the representation of data and information in graphical or pictorial formats that make it easier to understand, interpret, and communicate. It involves the use of charts, graphs, and other visual aids to display patterns, trends, and relationships in data.
+
+Engine
+In computing, an engine refers to a software module or program that performs a specific task or set of tasks. It is often used as a component of a larger software system or application, such as a search engine or game engine.
+
+Online Application & Online Services-
+
+Online application refers to a computer program or software that is accessed over the internet, usually through a web browser, and provides specific functionality to users. Online applications can be accessed from any device with an internet connection, making them convenient for users who need to access the application on-the-go or from different locations.
+
+Examples of online applications include email clients, social media platforms, online banking and shopping portals, video conferencing software, and productivity tools like Google Docs.
+
+Online services, on the other hand, refer to services that are offered over the internet, such as cloud computing, web hosting, online storage, and software as a service (SaaS). Online services provide users with access to technology and resources that they may not have the ability or desire to maintain on their own.
+
+Examples of online services include Google Drive, Dropbox, Amazon Web Services, Microsoft Office 365, and Salesforce.
+
+
+Product-based architecture: 
+A product-based architecture is a software design approach that focuses on building software products that are modular, scalable, and maintainable. It involves breaking down software systems into smaller, reusable components that can be combined to create new products or services.
+
+SOA:
+SOA, or Service-Oriented Architecture, is a software design approach in which applications are built by combining loosely-coupled, reusable services. Each service performs a specific business function and communicates with other services over a network using standard protocols.
+
+
+Virtual Environment 
+A cloud virtual machine is the digital version of a physical computer that can run in a cloud. Like a physical machine, it can run an operating system, store data, connect to networks, and do all the other computing functions.
+
+Application pipeline
+An application pipeline is a series of automated steps that take code from development to production. It includes building, testing, and deploying code. Application pipelines are used to streamline the development process, ensure code quality, and reduce errors. They can be integrated into a DevOps workflow, allowing developers to quickly and easily move code from one environment to another. Application pipelines can also be used to automate tasks like testing, security scanning, and monitoring. By using an application pipeline, organizations can accelerate the delivery of software and improve their overall software development process.
+
+
+
+
+Micro Services-
+Microservices are a software development approach in which a complex application is broken down into small, independent, and loosely coupled services. Each microservice is responsible for a specific functionality within the application and can communicate with other microservices through APIs.
+
+The main advantage of microservices architecture is that it allows developers to build and deploy applications more quickly and efficiently, as each microservice can be developed, tested, and deployed independently.
+
+CRUD: 
+CRUD is an acronym that stands for Create, Read, Update, and Delete. It refers to the basic operations that can be performed on a database or data storage system.
+
+Foreground and Background Services-
+
+Foreground and background services are two types of services that run on a computer or mobile device.
+
+Foreground services are services that are visible to the user and require user interaction. They are designed to provide immediate feedback to the user and typically run in the foreground of the user interface. 
+Examples of foreground services include an app that displays a video or a game that the user is actively playing.
+
+Background services, on the other hand, are services that run in the background without requiring user interaction. They are designed to perform tasks that do not require immediate attention from the user, such as downloading files, syncing data, or performing backups. Background services can run even when the app that initiated them is closed, and they may continue to run even when the device is in sleep mode.
+
+Daemon Process-
+
+A demon process, also known as a daemon process, is a computer program that runs in the background, usually without any user interaction. Daemon processes are often used to perform tasks that are necessary for the proper functioning of the operating system or other applications.
+
+Examples of daemon processes include system processes that manage network connections, perform backups, or monitor hardware devices for errors. These processes typically run continuously and are designed to be resilient to crashes or other failures.
+
+Electronic Data Processing (EDP)-
+
+Electronic data processing (EDP) refers to the use of electronic devices and software applications to store, process, and manage large volumes of data.EDP typically involves the use of computers, servers, and other electronic devices to process data. This includes data entry, data storage, data retrieval, data manipulation, and data analysis.EDP can be used to perform a wide range of tasks, such as accounting, payroll processing, inventory management, customer relationship management, and scientific research.
+
+Thread-
+
+In computer science, a thread is a basic unit of execution within a process. A thread is essentially a lightweight process that shares the resources of a larger process, such as the memory and CPU time, but runs independently of other threads within the same process.
+
+Threads are useful for concurrent programming, where multiple threads can execute in parallel, improving the efficiency of a program. Each thread can perform its own set of operations and can communicate and synchronize with other threads to share data and resources.
+
+Service Logic-
+
+In the context of computer science, service logic refers to the approach of designing software applications and services with a focus on creating value for the end-user or customer. It emphasizes the importance of understanding customer needs and designing services that are tailored to meet those needs, while also ensuring the efficient use of resources and technology.
+
+containerization
+
+Containerization is a process of packaging software applications and their dependencies in a portable and self-contained environment, called a container. Containers enable software applications to run consistently across different computing environments, such as development, testing, and production environments. Containers achieve this by virtualizing the operating system kernel and sharing the host system's resources. They provide an isolated and lightweight environment that allows applications to run without interfering with each other, ensuring consistency and reliability. Containerization has become a popular method for deploying and managing modern applications, especially in cloud computing environments, because of its flexibility, scalability, and efficiency. Some popular containerization platforms include Docker, Kubernetes, and OpenShift.
+
+
+
+Docker & Docker Hub & Docker Engine-
+
+Docker is a platform for developing, deploying, and running applications in containers. Docker provides a way to package an application and its dependencies into a single container, which can then be run consistently across different computing environments.
+
+Docker Hub is a cloud-based service provided by Docker that allows users to store and share container images. Docker Hub serves as a repository for Docker images, which are used to create containers. Users can search for, download, and upload container images to Docker Hub.
+
+Docker Engine is the underlying technology that powers Docker. It is a lightweight runtime environment for containers that provides the necessary infrastructure for running and managing Docker containers. Docker Engine provides features such as container isolation, resource management, and networking.
+
+Together, Docker, Docker Hub, and Docker Engine provide a complete solution for developing, deploying, and managing containerized applications. Docker allows developers to package an application and its dependencies into a container, Docker Hub provides a platform for sharing and distributing container images, and Docker Engine provides the runtime environment for running and managing containers.
+
+Linux Kernel-
+
+The Linux kernel is the core component of the Linux operating system. It is an open-source software that acts as a bridge between the hardware and the software applications running on the system. The Linux kernel provides low-level services, such as memory management, process management, file system management, and device driver management, to higher-level software applications.
+
+
+
+
+AWS Lambda-
+
+AWS Lambda is a serverless computing platform provided by Amazon Web Services (AWS). With AWS Lambda, users can run code in the cloud without having to provision or manage servers. Instead, the platform automatically scales and runs the code in response to incoming requests or events.
+
+AWS Lambda supports multiple programming languages, including Java, Python, Node.js, C#, Go, and Ruby. Users can upload their code to AWS Lambda as a function, which can be triggered by events such as API calls, file uploads, database changes, and messages from other AWS services.
+
+Big Data Administration-
+
+Big data administration refers to the management, deployment, and maintenance of large-scale data processing systems.Big data administration is critical for ensuring the availability, reliability, and performance of big data systems, as well as for optimizing their cost-effectiveness. Some of the key responsibilities of big data administrators include:
+
+Planning and deploying big data infrastructure, such as Hadoop clusters, data warehouses, and NoSQL databases.
+
+Configuring and managing distributed computing systems, such as Apache Spark, Apache Hadoop, and Apache Flink.
+
+Managing and optimizing data storage systems, such as HDFS, Amazon S3, and Azure Blob Storage.
+
+Monitoring and analyzing system performance, identifying and resolving issues, and optimizing system performance and scalability.
+
+Ensuring data security, privacy, and compliance with regulations, such as GDPR and CCPA.
+
+Designing and implementing backup and recovery strategies to ensure data availability and disaster recovery.
+
+Collaborating with developers, data analysts, and data scientists to ensure that the big data system meets their requirements and provides them with the necessary tools and resources.
+
+Overall, big data administration plays a critical role in enabling organizations to leverage their data assets effectively and efficiently, to drive business insights and value.
+
+
+Source Control System
+A source control system, also known as a version control system (VCS), is a software tool used by software developers to manage changes to source code and other files in a software project. Source control systems help developers collaborate on a project, track changes made to the codebase, and manage different versions of the code.Source control systems work by maintaining a central repository of code and other files, which can be accessed by developers who are authorized to work on the project. Developers can make changes to the code and commit those changes to the repository. The source control system tracks the changes made by each developer, allowing them to see who made a change and when it was made.There are several popular source control systems available, including Git, SVN (Subversion), Mercurial, and CVS (Concurrent Versions System). Git is currently one of the most widely used source control systems, known for its speed and efficiency, as well as its support for distributed development.
+
+GitHub
+GitHub is a version control system widely used in software development for managing changes to code. As a software developer, having a solid understanding of Git can be a valuable skill that can help you collaborate more effectively with other developers and keep track of changes to your codebase.
+
+Git-Hub Repository
+GitHub is a web-based platform for software development that allows developers to host and share their code repositories with others. A repository in GitHub is a central location where code and other files are stored and managed. It enables collaboration between developers and makes it easy to track changes, manage versions, and share code with others.
+
+To create a GitHub repository, a user first needs to create an account on GitHub. Once logged in, the user can create a new repository by clicking on the "New repository" button on the GitHub homepage. The user then needs to provide a name for the repository, a brief description, and choose whether it will be a public or private repository. Public repositories are accessible to anyone on the web, while private repositories are only accessible to collaborators who have been granted permission.
+
+𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆: A repository, or repo for short, is a collection of files and directories that Git tracks. Each repository has a unique URL that can be used to access it online.
+
+𝗖𝗼𝗺𝗺𝗶𝘁: A commit is a snapshot of changes made to the repository at a particular point in time. Each commit has a unique identifier that can be used to reference it later.
+
+𝗕𝗿𝗮𝗻𝗰𝗵: A branch is a separate line of development within a repository. Developers can create branches to work on specific features or fixes without affecting the main codebase.
+
+𝗠𝗲𝗿𝗴𝗲: Merging is the process of combining changes from one branch into another. This is often done to incorporate new features or fixes into the main codebase.
+
+𝗣𝘂𝗹𝗹 𝗥𝗲𝗾𝘂𝗲𝘀𝘁: A pull request is a request to merge changes from one branch into another. It allows developers to review and discuss the proposed changes before they are merged into the main codebase.
+
+𝗖𝗹𝗼𝗻𝗲: Cloning is the process of creating a copy of a repository on your local machine. This allows you to make changes to the code and push them back to the repository.
+
+
+
+
+SQL Database & Oracle Database-
+
+SQL Database and Oracle Database are both relational database management systems (RDBMS) that allow users to store and manage data in a structured way. However, there are some key differences between the two.
+
+SQL Database is a cloud-based relational database service provided by Microsoft Azure. It is a fully managed service that allows users to create, deploy, and manage SQL databases in the cloud. SQL Database is based on the Microsoft SQL Server database engine and supports standard SQL syntax.
+
+Oracle Database, on the other hand, is a commercial RDBMS developed by Oracle Corporation. It is one of the most widely used database systems in the world and is known for its robustness, scalability, and security. Oracle Database is a self-managed database that can be deployed on-premises or in the cloud. It supports a wide range of data types and has a powerful query language called PL/SQL.
+
+Heroku Platform-
+
+Heroku is a cloud-based platform-as-a-service (PaaS) that enables developers to build, deploy, and scale web applications and services. Heroku supports a variety of programming languages, including Ruby, Java, Python, Node.js, PHP, and Go. It provides a simple and intuitive interface for managing the deployment and scaling of web applications.
+
+With Heroku, developers can easily deploy their applications without having to worry about managing infrastructure. Heroku takes care of the underlying infrastructure, including servers, databases, and load balancers. It also provides automatic scaling, which means that the platform can automatically adjust the number of resources allocated to an application based on the incoming traffic.
+
+Container Image
+
+In the context of containerization, an image is a lightweight, stand-alone, executable package that includes everything needed to run a piece of software, including code, libraries, system tools, and runtime. Images are used as the basis for creating containers, which are instances of the image that can be run and managed independently.
+
+Images are created using a Dockerfile, which is a script that specifies the steps needed to build the image. The Dockerfile includes instructions for installing software dependencies, copying code and configuration files, and exposing ports for communication.
+
+Once an image is built, it can be stored in a registry, such as Docker Hub, where it can be easily accessed and downloaded by other developers. Images can also be shared directly between developers using the docker save and docker load commands.
+
+Container Instance
+Containers are created from images using the docker run command. When a container is created, a writable layer is added on top of the image layer, allowing the container to make changes to the file system without affecting the underlying image.
+
+
+Nginx
+
+Nginx (pronounced "engine-x") is a popular open-source web server and reverse proxy server.
+Nginx is known for its high performance and scalability, handling a large number of simultaneous connections and requests.
+In addition to serving as a web server, Nginx is often used as a load balancer, HTTP cache, and SSL/TLS termination proxy.
+
+
+Container orchestration
+Container orchestration is the process of managing and automating the deployment, scaling, and operation of containerized applications. It typically involves using a container orchestration platform like Kubernetes to manage the containers.
+
+Service logic: Service logic refers to the underlying logic or code that implements a software service.
+
+Libraries: Libraries are collections of reusable code that can be used to build software applications. They typically include pre-written functions and classes that can be incorporated into an application to provide specific functionality.
+
+Runtime: The runtime is the environment in which a software application runs. It includes the operating system, libraries, and other software components required to run the application.
+
+Docker engine: The Docker engine is a software component that manages the creation, deployment, and execution of Docker containers.
+
+ 
+Process
+In computing, a process is an instance of a computer program that is being executed by 
+one or many threads of a processor. A process is a self-contained execution environment that consists of a virtual memory space, code, data, system resources, and other operating system resources. Each process has its own unique process identifier (PID) that allows the operating system to manage and control it independently.
+
+Thread
+A thread, on the other hand, is a lightweight unit of execution that exists within a process.
+A thread shares the same memory space as the process and is able to access all 
+of the process's resources. 
+Threads are used to achieve parallelism within a process, allowing multiple tasks to be executed simultaneously. Each thread has its own program counter, stack, and register set, but shares the same heap as the process.
+
+Processes and threads work together to execute a program. When a program is launched, the operating system creates a process for it. Within the process, one or more threads are created to execute specific tasks. The main difference between processes and threads is that processes are independent of each other and have their own memory space, while threads share the same memory space and resources within a process
+
+Lightweight
+Lightweight, in computing and software engineering, refers to a program, application, or system that is designed to use minimal resources, such as memory, processing power, and storage space. Lightweight applications are typically faster, more efficient, and easier to deploy and maintain than their heavier counterparts.
+
+
+Multithreading: Multithreading is the process of running multiple threads within a single program or application. It is used to improve the performance and responsiveness of software applications.
+
+Docker engine: The Docker engine is a software component that manages the creation, deployment, and execution of Docker containers.
+
+Docker Hub:
+Docker Hub is the world’s largest repository of container images with an array of content sources including container community developers, open source projects and independent software vendors (ISV) building and distributing their code in containers.Docker Hub provides a centralized resource for container image discovery, distribution and change management, user and team collaboration, and workflow automation throughout the development pipeline.
+
+
+Docker build:
+Docker build is a command-line tool used to build Docker images. It allows developers to automate the process of building and deploying containerized applications. Docker build takes a Dockerfile and any necessary source files and packages them into a Docker image. The Dockerfile contains instructions for how the image should be built, such as what base image to use, what files to include, and what commands to run. The resulting Docker image can then be pushed to a Docker registry and deployed to any Docker host.
+
+Docker file:
+A Dockerfile is a text file that contains collections of instructions and commands that will be automatically executed in sequence in the docker environment for building a new docker image.
+
+
+
+Detach mode
+
+In Docker, detach mode refers to a way of running a container in the background, without attaching to the container's standard input, output, and error streams.
+This allows the container to run in the background while the user continues to use the terminal or command line interface.
+Detach mode is useful for long-running containers or when running multiple containers simultaneously.
+
+Internal port
+
+In containerization, an internal port refers to a port number used by a container to expose a service or application within the container to other containers or the host system.
+Internal ports are used in conjunction with external ports to enable communication between containers and the outside world.
+Each container can have multiple internal ports, which are typically mapped to specific external ports to facilitate communication with other containers or external systems.
+
+External port
+
+In containerization, an external port refers to a port number used to allow external systems or users to communicate with a containerized application or service.
+External ports are used in conjunction with internal ports to map traffic from the host system or other containers to specific ports within the container.
+This enables containers to communicate with the outside world and makes it possible to run containerized applications on different ports than they would normally use.
+
+
+Docker Swarm:
+Docker Swarm is a group of either physical or virtual machines that are running the Docker application and that have been configured to join together in a cluster. The activities of the cluster are controlled by a swarm manager, and machines that have joined the cluster are referred to as nodes.
+
+Openshift:
+OpenShift is a family of containerization software products developed by Red Hat. Red Hat OpenShift is a cloud-based Kubernetes platform that helps developers build applications.
+
+
+
+
+Binary Executable:
+A binary executable file is a file in a machine language for a specific processor. Binary executable files contain executable code that is represented in specific processor instructions. These instructions are executed by a processor directly.
+
+
+Runtime: The runtime is the environment in which a software application runs. It includes the operating system, libraries, and other software components required to run the application.
+
+Dependencies: Dependencies are the other software components or libraries that a software application relies on to function correctly.
+
+Inbox management: Inbox management refers to the process of organizing, prioritizing, and responding to emails in an email inbox.
+
+CSV
+
+CSV, or Comma-Separated Values, is a simple file format used for storing tabular data in a plain text format.
+Each line of the file represents a single record, with fields separated by commas or other delimiters, such as tabs or semicolons.
+CSV files can be easily imported and exported by many software applications and are commonly used for data exchange and data analysis.
+
+Serverless Application
+A serverless application is an application that is built and deployed without the need for traditional server infrastructure or server management. Instead of managing and scaling servers, the application relies on cloud services and functions that are provided by a cloud provider, such as AWS Lambda, Azure Functions, or Google Cloud Functions.
+In a serverless architecture, the cloud provider is responsible for managing the infrastructure and scaling the application as needed, based on the level of usage or traffic. This allows developers to focus on writing code and building features, rather than worrying about server maintenance and management.
+
+aws labda:
+AWS Lambda is an event-driven, serverless computing platform provided by Amazon as a part of Amazon Web Services. It is a computing service that runs code in response to events and automatically manages the computing resources required by that code1. AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you, making it easier to build applications that respond quickly to new information.
+
+Heroku
+is a cloud platform as a service (PaaS) that allows developers to build, deploy, and manage 
+applications entirely in the cloud without having to worry about infrastructure management. 
+With Heroku, developers can focus on building and deploying their applications quickly, while 
+the platform handles the underlying infrastructure and scaling issues
+
+Database server
+A database server is a computer program that provides database services to other computers or programs. It is responsible for managing access to a database and for processing requests from client programs. The database server stores data in a structured manner, making it easier for users to search, sort, and manipulate data.
+
+
+SQL Database and Oracle Database
+SQL Database and Oracle Database are two popular types of relational database management systems (RDBMS) used in enterprise applications.
+SQL Database is a cloud-based relational database management system offered by Microsoft as a part of its Azure cloud services platform. It uses SQL (Structured Query Language) for data management and supports a variety of programming languages, such as .NET, Java, Node.js, and Python. SQL Database is known for its scalability, performance, and security features, and is often used for web and mobile applications, data warehousing, and business intelligence.
+Oracle Database, on the other hand, is an enterprise-level RDBMS developed by Oracle 
+Corporation. It supports SQL and provides a variety of features, such as partitioning, 
+clustering, and replication, to support large-scale data processing and high availability. 
+Oracle Database is widely used in enterprise applications, such as banking, healthcare, 
+and government, and is known for its robustness, scalability, and security features
+
+A Database Administrator (DBA)
+
+A Database Administrator (DBA) is a professional responsible for managing and maintaining the performance, security, and availability of an organization's database systems. The role of a DBA involves a wide range of tasks, including database design, installation, configuration, monitoring, tuning, backup and recovery, and security management.
+DBAs work with different database management systems (DBMS), such as Oracle, Microsoft SQL Server, MySQL, and PostgreSQL, to ensure that the databases are operating efficiently and effectively. They are responsible for ensuring that data is stored securely, backed up regularly, and can be accessed quickly when needed. They also need to ensure that the data is consistent, accurate, and up-to-date.
+
+
+Stored procedures
+
+Stored procedures are a type of database object that encapsulates a group of SQL statements and procedural logic into a reusable program. They are stored within a database and can be called by other database objects or client applications to perform specific tasks or operations.
+Stored procedures can be used to perform a wide range of database-related tasks, such as data validation, data transformation, data aggregation, and data manipulation. They can also be used to implement business rules and logic, reducing the need for repetitive SQL statements and improving performance.
+One of the significant advantages of stored procedures is their ability to reduce network traffic between the database and client applications. Because stored procedures are executed on the server-side, they can reduce the amount of data that needs to be transmitted over the network, leading to better performance and reduced network latency.
+
+
+Pipeline
+
+A pipeline refers to a sequence of processes or stages in which output from one stage is used as input to the next stage.Pipelines are often used in software development to automate complex workflows or to process large amounts of data.Pipelines can be implemented using a range of tools and technologies, including shell scripts, programming languages, and specialized pipeline frameworks.
+
+Application Lifecycle Pipeline
+The application lifecycle pipeline, also known as the software development lifecycle (SDLC), is the process by which software is designed, developed, tested, deployed, and maintained. It consists of several stages, each of which has its own set of activities and goals
+
+
+Pipelining
+
+Pipelining is a technique used in computer architecture and processor design to improve the efficiency of instruction execution. Pipelining allows multiple instructions to be executed simultaneously, by breaking down the execution of each instruction into multiple stages that can be overlapped with the execution of other instructions.This results in faster and more efficient processing of instructions, and is commonly used in modern processors and microcontrollers.
+
+
+Website hosting
+Website hosting is the process of storing and making web pages or websites available on the internet for users to access. Website hosting providers offer various hosting services such as shared hosting, dedicated hosting, and cloud hosting to individuals and businesses that want to create a presence on the internet.
+
+Build Environment: 
+Build environment refers to the set of tools, configurations, and resources required to build and compile software applications. 
+It includes hardware and software components, such as build servers, compilers, libraries, and build scripts.
+The build environment is an essential part of the software development process, as it determines the reliability and consistency of the build process. 
+The build environment must be carefully configured and maintained to ensure that it is stable and consistent across different development environments.
+
+Production environment
+Production environment is a term used mostly by developers to describe the setting where software and other products are actually put into operation for their intended uses by end users. A production environment can be thought of as a real-time setting where programs are run and hardware setups are installed and relied on for organization or commercial daily operations.
+
+Test Environment
+A test environment is an environment used to test software before it is deployed to production. It is a replica of the production environment but with less data and fewer users. The purpose of a test environment is to ensure that the software works as expected and does not have any bugs or issues before it is released to end-users.
+
+
