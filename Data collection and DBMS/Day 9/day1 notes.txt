@@ -1,0 +1,41 @@
+operators in mogodb
+$lt, $gt, $gte, $lte, $in, $nin, $mod, $size, $type, 
+$exists, $elemMatch, $or, $and,$expr,$year,$month
+----to find all movies withe name='3 idiot'
+db.movie.find({name:'3 idiots'},{name:1,price:1,actor:1})
+
+----to find all movies withe rating 3
+db.movie.find({rating:3})
+
+----to find all movies with rating =3 and price=200
+db.movie.find({rating:3,price:200},{actor:0,_id:0})
+
+---to find all movies with price>200
+db.movie.find({price:{$gt:200}})
+
+---to find all movies with price<=200
+db.movie.find({price:{$lte:200}})
+
+---to find all movies with price>200 and rating<4
+price:{$gt:200}
+rating:{$lt:4}
+$and:[{price:{$gt:200}},{rating:{$lt:4}}]
+db.movie.find({price:{$gt:200},rating:{$lt:4}})
+db.movie.find({$and:[{price:{$gt:200}},{rating:{$lt:4}}]})
+---to find all movies with price>200 or rating<4
+price:{$gt:200}
+rating:{$lt:4}
+$or:[{price:{$gt:200}},{rating:{$lt:4}}]
+db.movie.find({$or:[{price:{$gt:200}},{rating:{$lt:4}}]})
+
+---to display all movies with price >200 and <400
+db.movie.find({price:{$gt:200,$lt:400}})
+
+---to display all the movies with rating is either 3 or 4 or 5
+db.movie.find({rating:{$in:[3,4,5]}})
+
+
+---to display all the movies with rating is not  3 or 4 or 5
+db.movie.find({rating:{$nin:[3,4,5]}})
+
+

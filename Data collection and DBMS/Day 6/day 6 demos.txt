@@ -1,0 +1,792 @@
+Enter password: *******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 23
+Server version: 8.0.22 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use iacsd0324_dbda
+Database changed
+mysql> delimiter //
+mysql> create procedure
+    -> begin
+    ->   declare vset,vempno,vdeptno int default 0;
+    ->   declare vename,vjob varchar(20);
+    ->   declare vsal,vavgsal float(9,2)
+    ->   declare empcur cursor for select empno,ename,job,sal,deptno from emp
+    ->   declare continue handler for NOT FOUND set vset=1;
+    ->   open empcur
+    ->   label1:loop
+    ->   fetch empcur into vempno,vename,vjob,vsal,vdeptno;
+    ->   if vset=1 then
+    ->  leave label1;
+    ->   end if;
+    ->   select avg(sal) into vavgsal
+    ->   from emp
+    ->   where deptno=vdeptno
+    ->   if vsal<vavgsal then
+    -> select vempno,vename,vjob,vsal,vdeptno,vavgsal;
+    ->   end if;
+    ->   end loop
+    ->
+    -> end//
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'declare vset,vempno,vdeptno int default 0;
+  declare vename,vjob varchar(20);
+  ' at line 3
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create procedure
+    -> begin
+    ->   declare vset,vempno,vdeptno int default 0;
+    ->   declare vename,vjob varchar(20);
+    ->   declare vsal,vavgsal float(9,2);
+    ->   declare empcur cursor for select empno,ename,job,sal,deptno from emp;
+    ->   declare continue handler for NOT FOUND set vset=1;
+    ->   open empcur;
+    ->   label1:loop
+    ->   fetch empcur into vempno,vename,vjob,vsal,vdeptno;
+    ->   if vset=1 then
+    ->  leave label1;
+    ->   end if;
+    ->   select avg(sal) into vavgsal
+    ->   from emp
+    ->   where deptno=vdeptno;
+    ->   if vsal<vavgsal then
+    -> select vempno,vename,vjob,vsal,vdeptno,vavgsal;
+    ->   end if;
+    ->   end loop;
+    ->
+    -> end//
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'declare vset,vempno,vdeptno int default 0;
+  declare vename,vjob varchar(20);
+  ' at line 3
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create procedure displayempbyavg()
+    -> begin
+    ->   declare vset,vempno,vdeptno int default 0;
+    ->   declare vename,vjob varchar(20);
+    ->   declare vsal,vavgsal float(9,2);
+    ->   declare empcur cursor for select empno,ename,job,sal,deptno from emp;
+    ->   declare continue handler for NOT FOUND set vset=1;
+    ->   open empcur;
+    ->   label1:loop
+    ->   fetch empcur into vempno,vename,vjob,vsal,vdeptno;
+    ->   if vset=1 then
+    ->  leave label1;
+    ->   end if;
+    ->   select avg(sal) into vavgsal
+    ->   from emp
+    ->   where deptno=vdeptno;
+    ->   if vsal<vavgsal then
+    -> select vempno,vename,vjob,vsal,vdeptno,vavgsal;
+    ->   end if;
+    ->   end loop;
+    ->   close empcur;
+    -> end//
+Query OK, 0 rows affected, 1 warning (0.02 sec)
+
+mysql> delimiter ;
+mysql> call displayempbyavg();
++--------+--------+----------+---------+---------+---------+
+| vempno | vename | vjob     | vsal    | vdeptno | vavgsal |
++--------+--------+----------+---------+---------+---------+
+|   7499 | ALLEN  | SALESMAN | 1600.00 |      30 | 6266.57 |
++--------+--------+----------+---------+---------+---------+
+1 row in set (0.05 sec)
+
++--------+--------+----------+---------+---------+---------+
+| vempno | vename | vjob     | vsal    | vdeptno | vavgsal |
++--------+--------+----------+---------+---------+---------+
+|   7521 | WARD   | SALESMAN | 1250.00 |      30 | 6266.57 |
++--------+--------+----------+---------+---------+---------+
+1 row in set (0.05 sec)
+
++--------+--------+---------+---------+---------+---------+
+| vempno | vename | vjob    | vsal    | vdeptno | vavgsal |
++--------+--------+---------+---------+---------+---------+
+|   7566 | JONES  | MANAGER | 2975.00 |      20 | 3010.00 |
++--------+--------+---------+---------+---------+---------+
+1 row in set (0.06 sec)
+
++--------+--------+----------+---------+---------+---------+
+| vempno | vename | vjob     | vsal    | vdeptno | vavgsal |
++--------+--------+----------+---------+---------+---------+
+|   7654 | MARTIN | SALESMAN | 1250.00 |      30 | 6266.57 |
++--------+--------+----------+---------+---------+---------+
+1 row in set (0.06 sec)
+
++--------+--------+---------+---------+---------+---------+
+| vempno | vename | vjob    | vsal    | vdeptno | vavgsal |
++--------+--------+---------+---------+---------+---------+
+|   7698 | BLAKE  | MANAGER | 2850.00 |      30 | 6266.57 |
++--------+--------+---------+---------+---------+---------+
+1 row in set (0.07 sec)
+
++--------+--------+---------+---------+---------+----------+
+| vempno | vename | vjob    | vsal    | vdeptno | vavgsal  |
++--------+--------+---------+---------+---------+----------+
+|   7782 | CLARK  | MANAGER | 2450.00 |      10 | 22575.14 |
++--------+--------+---------+---------+---------+----------+
+1 row in set (0.08 sec)
+
++--------+--------+---------+---------+---------+---------+
+| vempno | vename | vjob    | vsal    | vdeptno | vavgsal |
++--------+--------+---------+---------+---------+---------+
+|   7788 | SCOTT  | ANALYST | 3000.00 |      20 | 3010.00 |
++--------+--------+---------+---------+---------+---------+
+1 row in set (0.10 sec)
+
++--------+--------+-----------+---------+---------+----------+
+| vempno | vename | vjob      | vsal    | vdeptno | vavgsal  |
++--------+--------+-----------+---------+---------+----------+
+|   7839 | KING   | PRESIDENT | 5000.00 |      10 | 22575.14 |
++--------+--------+-----------+---------+---------+----------+
+1 row in set (0.11 sec)
+
++--------+--------+----------+---------+---------+---------+
+| vempno | vename | vjob     | vsal    | vdeptno | vavgsal |
++--------+--------+----------+---------+---------+---------+
+|   7844 | TURNER | SALESMAN | 1500.00 |      30 | 6266.57 |
++--------+--------+----------+---------+---------+---------+
+1 row in set (0.13 sec)
+
++--------+--------+-------+---------+---------+---------+
+| vempno | vename | vjob  | vsal    | vdeptno | vavgsal |
++--------+--------+-------+---------+---------+---------+
+|   7876 | ADAMS  | CLERK | 1100.00 |      20 | 3010.00 |
++--------+--------+-------+---------+---------+---------+
+1 row in set (0.14 sec)
+
++--------+--------+-------+--------+---------+---------+
+| vempno | vename | vjob  | vsal   | vdeptno | vavgsal |
++--------+--------+-------+--------+---------+---------+
+|   7900 | JAMES  | CLERK | 950.00 |      30 | 6266.57 |
++--------+--------+-------+--------+---------+---------+
+1 row in set (0.16 sec)
+
++--------+--------+---------+---------+---------+---------+
+| vempno | vename | vjob    | vsal    | vdeptno | vavgsal |
++--------+--------+---------+---------+---------+---------+
+|   7902 | FORD   | ANALYST | 3000.00 |      20 | 3010.00 |
++--------+--------+---------+---------+---------+---------+
+1 row in set (0.18 sec)
+
++--------+--------+-------+---------+---------+----------+
+| vempno | vename | vjob  | vsal    | vdeptno | vavgsal  |
++--------+--------+-------+---------+---------+----------+
+|   7934 | MILLER | CLERK | 1300.00 |      10 | 22575.14 |
++--------+--------+-------+---------+---------+----------+
+1 row in set (0.19 sec)
+
+Query OK, 0 rows affected (0.21 sec)
+
+mysql> select empno,ename,hiredate,floor(datediff(curdate(),hiredate)/365)
+    -> from emp;
++-------+----------+------------+-----------------------------------------+
+| empno | ename    | hiredate   | floor(datediff(curdate(),hiredate)/365) |
++-------+----------+------------+-----------------------------------------+
+|   100 | Rajat_k  | 1982-03-04 |                                      42 |
+|   101 | Ashwin   | 2020-01-01 |                                       4 |
+|   102 | Ashwini  | 2020-01-01 |                                       4 |
+|   103 | Deepa    | 2022-01-01 |                                       2 |
+|   104 | Sangeeta | 2022-01-01 |                                       2 |
+|   123 | Revati   | 2020-03-12 |                                       4 |
+|   125 | Atharva  | 2021-03-15 |                                       3 |
+|  7369 | SMITH    | 1980-12-17 |                                      43 |
+|  7499 | ALLEN    | 1981-02-20 |                                      43 |
+|  7521 | WARD     | 1981-02-22 |                                      43 |
+|  7566 | JONES    | 1981-04-02 |                                      43 |
+|  7654 | MARTIN   | 1981-09-28 |                                      42 |
+|  7698 | BLAKE    | 1981-05-01 |                                      42 |
+|  7782 | CLARK    | 1981-06-09 |                                      42 |
+|  7788 | SCOTT    | 1982-12-09 |                                      41 |
+|  7839 | KING     | 1981-11-17 |                                      42 |
+|  7844 | TURNER   | 1981-09-08 |                                      42 |
+|  7876 | ADAMS    | 1983-01-12 |                                      41 |
+|  7900 | JAMES    | 1981-12-03 |                                      42 |
+|  7902 | FORD     | 1981-12-03 |                                      42 |
+|  7934 | MILLER   | 1982-01-23 |                                      42 |
++-------+----------+------------+-----------------------------------------+
+21 rows in set (0.00 sec)
+
+mysql> create function f1() returns int
+    -> begin
+    ->    return 10;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3
+mysql> delimiter //
+mysql> create function f1() returns int
+    -> begin
+    ->    return 10;
+    -> end//
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> set GLOBAL log_bin_trust_function_creators=1;
+    -> //
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> delimiter //
+mysql> create function calculateexp(ehiredate date) returns int
+    -> begin
+    ->    declare vexp int;
+    ->    set vexp=floor(datediff(curdate(),ehiredate)/365)
+    ->    return vexp;
+    -> end//
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'return vexp;
+end' at line 5
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create function calculateexp(ehiredate date) returns int
+    -> begin
+    ->    declare vexp int;
+    ->    set vexp=floor(datediff(curdate(),ehiredate)/365);
+    ->    return vexp;
+    -> end//
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> delimiter ;
+mysql> select empno,ename,hiredate,calculateexp(hiredate)
+    -> from emp;
++-------+----------+------------+------------------------+
+| empno | ename    | hiredate   | calculateexp(hiredate) |
++-------+----------+------------+------------------------+
+|   100 | Rajat_k  | 1982-03-04 |                     42 |
+|   101 | Ashwin   | 2020-01-01 |                      4 |
+|   102 | Ashwini  | 2020-01-01 |                      4 |
+|   103 | Deepa    | 2022-01-01 |                      2 |
+|   104 | Sangeeta | 2022-01-01 |                      2 |
+|   123 | Revati   | 2020-03-12 |                      4 |
+|   125 | Atharva  | 2021-03-15 |                      3 |
+|  7369 | SMITH    | 1980-12-17 |                     43 |
+|  7499 | ALLEN    | 1981-02-20 |                     43 |
+|  7521 | WARD     | 1981-02-22 |                     43 |
+|  7566 | JONES    | 1981-04-02 |                     43 |
+|  7654 | MARTIN   | 1981-09-28 |                     42 |
+|  7698 | BLAKE    | 1981-05-01 |                     42 |
+|  7782 | CLARK    | 1981-06-09 |                     42 |
+|  7788 | SCOTT    | 1982-12-09 |                     41 |
+|  7839 | KING     | 1981-11-17 |                     42 |
+|  7844 | TURNER   | 1981-09-08 |                     42 |
+|  7876 | ADAMS    | 1983-01-12 |                     41 |
+|  7900 | JAMES    | 1981-12-03 |                     42 |
+|  7902 | FORD     | 1981-12-03 |                     42 |
+|  7934 | MILLER   | 1982-01-23 |                     42 |
++-------+----------+------------+------------------------+
+21 rows in set (0.01 sec)
+
+mysql> delimiter //
+mysql> create function generateemail(enm varchar(20),ejob varchar(20)) returns varchar(20)
+    -> begin
+    ->    declare vemail varchar(50);
+    ->    set vemail=concat(substr(enm,3,4),'.',left(ejob,3),'@mycompany.com');
+    ->    return vemail;
+    -> end//
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> delimiter ;
+mysql> select empno,ename,job,generateemail(ename,job)
+    -> from emp;
+ERROR 1265 (01000): Data truncated for column 'generateemail(ename,job)' at row 1
+mysql> drop function generateemail;
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> delimiter //
+mysql> create function generateemail(enm varchar(20),ejob varchar(20)) returns varchar(50)
+    -> begin
+    ->    declare vemail varchar(50);
+    ->    set vemail=concat(substr(enm,3,4),'.',left(ejob,3),'@mycompany.com');
+    ->    return vemail;
+    -> end//
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> delimiter ;
+mysql> select empno,ename,job,generateemail(ename,job)
+    -> from emp;
++-------+----------+-----------+--------------------------+
+| empno | ename    | job       | generateemail(ename,job) |
++-------+----------+-----------+--------------------------+
+|   100 | Rajat_k  | CLERK     | jat_.CLE@mycompany.com   |
+|   101 | Ashwin   | manager   | hwin.man@mycompany.com   |
+|   102 | Ashwini  | CLERK     | hwin.CLE@mycompany.com   |
+|   103 | Deepa    | CLERK     | epa.CLE@mycompany.com    |
+|   104 | Sangeeta | CLERK     | ngee.CLE@mycompany.com   |
+|   123 | Revati   | design    | vati.des@mycompany.com   |
+|   125 | Atharva  | design    | harv.des@mycompany.com   |
+|  7369 | SMITH    | CLERK     | ITH.CLE@mycompany.com    |
+|  7499 | ALLEN    | SALESMAN  | LEN.SAL@mycompany.com    |
+|  7521 | WARD     | SALESMAN  | RD.SAL@mycompany.com     |
+|  7566 | JONES    | MANAGER   | NES.MAN@mycompany.com    |
+|  7654 | MARTIN   | SALESMAN  | RTIN.SAL@mycompany.com   |
+|  7698 | BLAKE    | MANAGER   | AKE.MAN@mycompany.com    |
+|  7782 | CLARK    | MANAGER   | ARK.MAN@mycompany.com    |
+|  7788 | SCOTT    | ANALYST   | OTT.ANA@mycompany.com    |
+|  7839 | KING     | PRESIDENT | NG.PRE@mycompany.com     |
+|  7844 | TURNER   | SALESMAN  | RNER.SAL@mycompany.com   |
+|  7876 | ADAMS    | CLERK     | AMS.CLE@mycompany.com    |
+|  7900 | JAMES    | CLERK     | MES.CLE@mycompany.com    |
+|  7902 | FORD     | ANALYST   | RD.ANA@mycompany.com     |
+|  7934 | MILLER   | CLERK     | LLER.CLE@mycompany.com   |
++-------+----------+-----------+--------------------------+
+21 rows in set (0.01 sec)
+
+mysql> select * from product;
+Empty set (0.05 sec)
+
+mysql> create table dept_audit(
+    -> did int,
+    -> dname varchar(20),
+    -> old_dname varchar(20),
+    -> newloc varchar(20),
+    -> oldloc varchar(20)
+    -> username varchar(20),
+    -> chang_date date);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'username varchar(20),
+chang_date date)' at line 7
+mysql> create table dept_audit(
+    -> did int,
+    -> dname varchar(20),
+    -> old_dname varchar(20),
+    -> newloc varchar(20),
+    -> oldloc varchar(20),
+    -> username varchar(20),
+    -> chang_date date);
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> delimiter //
+mysql> create trigger insertdepttr before insert
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.pname,
+    -> old.pname,new.dloc,old.dloc,user,curdate())
+    ->
+    -> end//
+ERROR 1363 (HY000): There is no OLD row in on INSERT trigger
+mysql>
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create trigger insertdepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.pname,
+    -> old.pname,new.dloc,old.dloc,user,curdate())
+    ->
+    -> end//
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'end' at line 7
+mysql>
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create trigger insertdepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.pname,
+    -> old.pname,new.dloc,old.dloc,user,curdate());
+    ->
+    -> end//
+ERROR 1054 (42S22): Unknown column 'pname' in 'NEW'
+mysql>
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create trigger insertdepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.dloc,old.dloc,user,curdate());
+    ->
+    -> end//
+ERROR 1054 (42S22): Unknown column 'dloc' in 'NEW'
+mysql>
+mysql> delimiter ;
+mysql> desc dept;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| DEPTNO | int         | NO   | PRI | NULL    |       |
+| DNAME  | varchar(14) | YES  |     | NULL    |       |
+| LOC    | varchar(13) | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> delimiter //
+mysql> create trigger insertdepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user,curdate());
+    ->
+    -> end//
+Query OK, 0 rows affected (0.01 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'end' at line 1
+mysql>
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create trigger insertdepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user,curdate());
+    -> //
+ERROR 1359 (HY000): Trigger already exists
+mysql> drop trigger insertdepttr;
+    -> //
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> create trigger insertdepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user,curdate());
+    -> //
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> select * from dept_audit;
+    -> //
+Empty set (0.05 sec)
+
+mysql> delimiter ;
+mysql> update dept
+    -> set loc='xxx'
+    -> where deptno=10;
+ERROR 1054 (42S22): Unknown column 'user' in 'field list'
+mysql> drop trigger insertdepttr;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> delimiter //
+mysql> create trigger insertdepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user(),curdate());
+    -> //
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> update dept
+    -> set loc='xxx'
+    -> where deptno=20;
+    -> //
+Query OK, 1 row affected (0.05 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from dept_audit;
+    -> //
++------+----------+-----------+--------+--------+----------------+------------+
+| did  | dname    | old_dname | newloc | oldloc | username       | chang_date |
++------+----------+-----------+--------+--------+----------------+------------+
+|   20 | RESEARCH | RESEARCH  | xxx    | DALLAS | root@localhost | 2024-03-31 |
++------+----------+-----------+--------+--------+----------------+------------+
+1 row in set (0.00 sec)
+
+mysql> update dept
+    -> set dname='a',loc='b'
+    -> where deptno=30;
+    -> //
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from dept_audit;
+    -> //
++------+----------+-----------+--------+---------+----------------+------------+
+| did  | dname    | old_dname | newloc | oldloc  | username       | chang_date |
++------+----------+-----------+--------+---------+----------------+------------+
+|   20 | RESEARCH | RESEARCH  | xxx    | DALLAS  | root@localhost | 2024-03-31 |
+|   30 | a        | SALES     | b      | CHICAGO | root@localhost | 2024-03-31 |
++------+----------+-----------+--------+---------+----------------+------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from dept;
+    -> //
++--------+------------+----------+
+| DEPTNO | DNAME      | LOC      |
++--------+------------+----------+
+|      8 | admin      | pune     |
+|     10 | ACCOUNTING | NEW YORK |
+|     20 | RESEARCH   | xxx      |
+|     30 | a          | b        |
+|     40 | OPERATIONS | BOSTON   |
++--------+------------+----------+
+5 rows in set (0.00 sec)
+
+mysql> alter table dept_audit
+    -> add action varchar(20);
+    -> //
+Query OK, 0 rows affected (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc dept_audit;
+    -> //
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| did        | int         | YES  |     | NULL    |       |
+| dname      | varchar(20) | YES  |     | NULL    |       |
+| old_dname  | varchar(20) | YES  |     | NULL    |       |
+| newloc     | varchar(20) | YES  |     | NULL    |       |
+| oldloc     | varchar(20) | YES  |     | NULL    |       |
+| username   | varchar(20) | YES  |     | NULL    |       |
+| chang_date | date        | YES  |     | NULL    |       |
+| action     | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+8 rows in set (0.05 sec)
+
+mysql> select * from dept_audit;
+    -> //
++------+----------+-----------+--------+---------+----------------+------------+--------+
+| did  | dname    | old_dname | newloc | oldloc  | username       | chang_date | action |
++------+----------+-----------+--------+---------+----------------+------------+--------+
+|   20 | RESEARCH | RESEARCH  | xxx    | DALLAS  | root@localhost | 2024-03-31 | NULL   |
+|   30 | a        | SALES     | b      | CHICAGO | root@localhost | 2024-03-31 | NULL   |
++------+----------+-----------+--------+---------+----------------+------------+--------+
+2 rows in set (0.00 sec)
+
+mysql> update dept_audit
+    -> set action='update';
+    -> //
+Query OK, 2 rows affected (0.00 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> select * from dept_audit;
+    -> //
++------+----------+-----------+--------+---------+----------------+------------+--------+
+| did  | dname    | old_dname | newloc | oldloc  | username       | chang_date | action |
++------+----------+-----------+--------+---------+----------------+------------+--------+
+|   20 | RESEARCH | RESEARCH  | xxx    | DALLAS  | root@localhost | 2024-03-31 | update |
+|   30 | a        | SALES     | b      | CHICAGO | root@localhost | 2024-03-31 | update |
++------+----------+-----------+--------+---------+----------------+------------+--------+
+2 rows in set (0.00 sec)
+
+mysql> drop trigger insertdepttr;
+    -> //
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> delimiter //
+mysql> create trigger updatedepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user(),curdate(),'update');
+    ->
+    -> end//
+Query OK, 0 rows affected (0.02 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'end' at line 1
+mysql>
+mysql> delimiter ;
+mysql> delimiter //
+mysql> create trigger updatedepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user(),curdate(),'update');
+    ->
+    ->
+    ->
+    -> delimiter ;
+    -> //
+ERROR 1359 (HY000): Trigger already exists
+mysql> drop trigger updatedepttr;
+    -> //
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter //
+mysql> create trigger updatedepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user(),curdate(),'update');
+    ->
+    ->
+    ->
+    -> delimiter ;
+    -> ^C
+mysql> create trigger updatedepttr before update
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,new.dname,
+    -> old.dname,new.loc,old.loc,user(),curdate(),'update');
+    ->
+    -> //
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> create trigger insertdepttr before insert
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(new.deptno,new.dname,
+    -> null,new.loc,null,user(),curdate(),'insert');
+    -> //
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into dept values(60,'sss','pune');
+    -> //
+Query OK, 1 row affected (0.01 sec)
+
+mysql> delimiter ;
+mysql> select * from dept;
++--------+------------+----------+
+| DEPTNO | DNAME      | LOC      |
++--------+------------+----------+
+|      8 | admin      | pune     |
+|     10 | ACCOUNTING | NEW YORK |
+|     20 | RESEARCH   | xxx      |
+|     30 | a          | b        |
+|     40 | OPERATIONS | BOSTON   |
+|     60 | sss        | pune     |
++--------+------------+----------+
+6 rows in set (0.00 sec)
+
+mysql> select * from dept_audit;
++------+----------+-----------+--------+---------+----------------+------------+--------+
+| did  | dname    | old_dname | newloc | oldloc  | username       | chang_date | action |
++------+----------+-----------+--------+---------+----------------+------------+--------+
+|   20 | RESEARCH | RESEARCH  | xxx    | DALLAS  | root@localhost | 2024-03-31 | update |
+|   30 | a        | SALES     | b      | CHICAGO | root@localhost | 2024-03-31 | update |
+|   60 | sss      | NULL      | pune   | NULL    | root@localhost | 2024-03-31 | insert |
++------+----------+-----------+--------+---------+----------------+------------+--------+
+3 rows in set (0.00 sec)
+
+mysql> create trigger deletedepttr after delete
+    -> on dept
+    -> for each row
+    ->     insert into dept_audit values(old.deptno,null,
+    -> old.dname,null,old.loc,user(),curdate(),'delete');
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> delete from dept
+    -> wehere deptno betweem 30 and 50;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'deptno betweem 30 and 50' at line 2
+mysql> delete from dept
+    -> where deptno between 30 and 50;
+Query OK, 2 rows affected (0.05 sec)
+
+mysql> select * from dept;
++--------+------------+----------+
+| DEPTNO | DNAME      | LOC      |
++--------+------------+----------+
+|      8 | admin      | pune     |
+|     10 | ACCOUNTING | NEW YORK |
+|     20 | RESEARCH   | xxx      |
+|     60 | sss        | pune     |
++--------+------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from dept_audit;
++------+----------+------------+--------+---------+----------------+------------+--------+
+| did  | dname    | old_dname  | newloc | oldloc  | username       | chang_date | action |
++------+----------+------------+--------+---------+----------------+------------+--------+
+|   20 | RESEARCH | RESEARCH   | xxx    | DALLAS  | root@localhost | 2024-03-31 | update |
+|   30 | a        | SALES      | b      | CHICAGO | root@localhost | 2024-03-31 | update |
+|   60 | sss      | NULL       | pune   | NULL    | root@localhost | 2024-03-31 | insert |
+|   30 | NULL     | a          | NULL   | b       | root@localhost | 2024-03-31 | delete |
+|   40 | NULL     | OPERATIONS | NULL   | BOSTON  | root@localhost | 2024-03-31 | delete |
++------+----------+------------+--------+---------+----------------+------------+--------+
+5 rows in set (0.00 sec)
+
+mysql> drop table dept_audit;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table dept_audit(
+    ->  did int,
+    ->  dname varchar(20),
+    -> old_dname varchar(20),
+    -> newloc varchar(20),
+    ->  oldloc varchar(20),
+    -> username varchar(20),
+    ->  chang_date date);
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> select * from dept;
++--------+------------+----------+
+| DEPTNO | DNAME      | LOC      |
++--------+------------+----------+
+|      8 | admin      | pune     |
+|     10 | ACCOUNTING | NEW YORK |
+|     20 | RESEARCH   | xxx      |
+|     60 | sss        | pune     |
++--------+------------+----------+
+4 rows in set (0.00 sec)
+
+mysql>  insert into dept values(60,'x','y');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql>  insert into emp(empno,ename,job) values(7902,'x','y');
+ERROR 1062 (23000): Duplicate entry '7902' for key 'emp.PRIMARY'
+mysql> alter table dept_audit add action varchar(20);
+Query OK, 0 rows affected (0.09 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql>  insert into dept values(60,'x','y');
+ERROR 1062 (23000): Duplicate entry '60' for key 'dept.PRIMARY'
+mysql> delimiter //
+mysql> create procedure inserdept(did int, edname varchar(20),edloc varchar(20))
+    -> begin
+    ->   declare continue handler for SQLEXCEPTION select 'error occured'
+    ->   insert into dept values(did,edname,edloc);
+    ->   select did,edname,edloc,'duplicate entry'
+    -> end//
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into dept values(did,edname,edloc);
+  select did,edname,edloc,'duplicate ' at line 4
+mysql> delimieter ;
+    -> ^C
+mysql> delimiter //
+mysql> create procedure inserdept(did int, edname varchar(20),edloc varchar(20))
+    -> begin
+    ->   declare continue handler for SQLEXCEPTION select 'error occured';
+    ->   insert into dept values(did,edname,edloc);
+    ->   select did,edname,edloc,'duplicate entry';
+    -> end//
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter ;
+mysql> call inserdept(60,'x','y');
++---------------+
+| error occured |
++---------------+
+| error occured |
++---------------+
+1 row in set (0.05 sec)
+
++------+--------+-------+-----------------+
+| did  | edname | edloc | duplicate entry |
++------+--------+-------+-----------------+
+|   60 | x      | y     | duplicate entry |
++------+--------+-------+-----------------+
+1 row in set (0.05 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> drop procedure inserdept;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> delimiter //
+mysql> create procedure inserdept(did int, edname varchar(20),edloc varchar(20))
+    -> begin
+    ->   declare exit handler for SQLEXCEPTION select 'error occured';
+    ->   insert into dept values(did,edname,edloc);
+    ->   select did,edname,edloc,'duplicate entry';
+    -> end//
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> delimieter ;
+    -> //
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delimieter' at line 1
+mysql> delimiter ;
+mysql> cal inserdept(60,'x','y);
+    '> //
+    '> ^C
+mysql> call insertdept(60,'x','y');
+ERROR 1062 (23000): Duplicate entry '60' for key 'dept.PRIMARY'
+mysql> call inserdept(60,'x','y');
++---------------+
+| error occured |
++---------------+
+| error occured |
++---------------+
+1 row in set (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql>
