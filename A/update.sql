@@ -27,6 +27,5 @@ db.movie.find({name:'kashmir files'},{$push:{actor:'anupam kher'}})
 db.movie.update({name:'kashmir files'},
  {$push:{actor:'anupam kher'})
  
-db.movie.update({name:'kashmir files'},{$push:{actor:'anupam kher'})
- 
+db.movie.update({name:'kashmir files'},{$push:{actor:'anupam kher'}) 
 

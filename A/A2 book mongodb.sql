@@ -26,8 +26,14 @@ db.book.find({longDescription:/highlighting/,/depth/},{title:1}).count()
 db.book.find({$expr:{$eq:[{$year:'$publishedDate'},2009]}},{publishedDate:1})
 
 
+db.book.find({longDescription:/highlighting and depth/},{title:1}).count()
+
+db.book.find({$pageCount:{$in:[500,556,670]}},{title:1})
+
+iacsd0324> db.book.find({pageCount:{$in:[500,556,670]}},{title:1,pageCount:1})
 
 
+db.book.updateMany({$and:[{pageCount:{$gt:200}},{pageCount:{$lt:500}}]},{categories:{$push:{$each:['kindle']}}})
 
 
 

@@ -1,0 +1,15 @@
+--car--
+db.movie.aggregate([{$sort:{rating:-1}}])
+
+iacsd0324> db.movie.aggregate([{$sort:{rating:-1}},{$skip:2},{$limit:3}])
+
+db.movie.aggregate([{$sort:{rating:-1}},{$skip:2},{$limit:3},{$sort:{name:1}}])
+
+db.movie.aggregate([{$sort:{rating:-1}},{$skip:2},{$limit:3},{$project:{name:1}}])
+
+db.movie.aggregate([{$sort:{rating:1}},{$limit:5},{$project:{rating:1}}])
+
+db.movie.aggregate([{$project:{name:1,rating:1,price:1}},{$sort:{rating:1}},{$skip:2},{$limit:3},{$sort:{name:1}}])
+
+db.movie.updateMany({rating:{$in:['','null']}},{$set:{rating:0}})
+
