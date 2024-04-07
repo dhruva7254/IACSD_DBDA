@@ -1,0 +1,39 @@
+car
+---Mongo DB---
+db.restaurent.find()
+show collection
+db.restaurent.findOne()
+--to display movie with name='kahani'
+db.movie.find({name:'kahani'})
+--to display name, rating, price of all movies
+db.movie.find({},{name:1,rating:1,price:1})
+--to display all movies with price > 200 and < 600
+db.movie.find({$and:[{price:{$gt:200}},{price:{$lt:600}}]})
+db.movie.find({price:{$gt:200,$lt:600}})
+--to find all movies with price = either 200 or 310 or 500
+db.movie.find({price:{$in:[200,310,500]}})
+--to find all movies with price not = either 200 or 310 or 500
+db.movie.find({price:{$nin:[200,310,500]}})
+--to find all movies with ticket_num>150 and price>200
+db.movie.find({$and:[{ticket_no:{$gt:150}},{price:{$gt:200}}]})
+db.movie.find({ticket_no:{$gt:150},price:{$gt:200}})
+--to find movies with rating is NULL
+db.movie.find({rating:null})
+db.movie.find({rating:{$in:[null],$exists:true}})
+--to find all documents with no rating key in it
+db.movie.find({rating:{$exists:false}})
+--to find all movies with actor amithabh acted in
+db.movie.find({actor:'Amitabh'})
+--to find all movies with actor Amitabh acted, and his name is at o th position
+db.movie.find({'actor.0':'Amitabh'})
+--to find all movies with length of actor array is 3
+db.movie.find({actor:{$size:3}})
+--to find all movies with rating divisible by 7
+db.movie.find({rating:{$mod:[7,0]}})
+--to find all movies with even rating
+db.movie.find({rating:{$mod:[2,0]}})
+--to find all movies with odd rating
+db.movie.find({rating:{$mod:[2,1]}})
+
+db.movie.find({rating:{$type:'string'}})
+db.movie.insert({rating:{$type:'string'}})

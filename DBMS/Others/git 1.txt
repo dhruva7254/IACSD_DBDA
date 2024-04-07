@@ -1,0 +1,7 @@
+echo "# IACSD_DBDA" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dhruva7254/IACSD_DBDA.git
+git push -u origin main

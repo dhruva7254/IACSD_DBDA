@@ -1,0 +1,2274 @@
+Microsoft Windows [Version 10.0.22621.3155]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\anilk>mongosh
+Current Mongosh Log ID: 660e6903a348c48876e3194a
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.1
+Using MongoDB:          7.0.2
+Using Mongosh:          2.0.1
+mongosh 2.2.2 is available for download: https://www.mongodb.com/try/download/shell
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-03-26T08:22:59.719+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+Warning: Found ~/.mongorc.js, but not ~/.mongoshrc.js. ~/.mongorc.js will not be loaded.
+  You may want to copy or rename ~/.mongorc.js to ~/.mongoshrc.js.
+test> use iacsd0924
+switched to db iacsd0924
+iacsd0924> db.movie.find();
+
+iacsd0924> use iacsd0324
+switched to db iacsd0324
+iacsd0324> db.movie.find();
+[
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    name: 'Dil dhadakane do',
+    rating: 13,
+    price: 540,
+    actor: "['Anil kapoor']"
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'kahani',
+    actor: [ 'aaaa', 'bbbb', 'karan', 'karri', 'vidya' ],
+    ticket_no: 420,
+    price: 400,
+    ac7tors: [ 'bbbb' ],
+    rating: 18,
+    lastmodified: ISODate("2019-04-07T11:25:40.634Z")
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'newton',
+    ticket_no: 690,
+    actor: [ 'Rajkumar Rao', 'Pankaj Tripathi' ],
+    price: 510,
+    lastmodified: ISODate("2019-09-28T14:47:49.204Z"),
+    rating: 10
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    name: 'mission mangal',
+    price: 550,
+    actor: [ 'Sonakshi', 'Vidya Balan' ],
+    rating: 16
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    price: 825.0000000000001,
+    ticket_no: 300,
+    actor: [
+      'Deepika',
+      'shahid kapoor',
+      'ranveer singh',
+      'aditi Rao',
+      'aaaaa'
+    ],
+    cancellation: { date: Timestamp({ t: 1567175239, i: 1 }) },
+    lastchange: ISODate("2024-04-03T14:36:03.983Z")
+  },
+  {
+    _id: ObjectId("5d8f51ce065d3e2aa902aa22"),
+    name: 'dream girl',
+    actor: [ 'ayushman', 'nushrat bharucha' ],
+    price: 450,
+    rating: null
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    name: 'chichore',
+    price: 474,
+    rating: 4.3,
+    actor: [ 'sushant', 'shradha kapoor', 'zzz', 'harshal' ]
+  },
+  { _id: ObjectId("5d8f6eec620d2353221b91dd"), price: 480 },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    name: 'Andhadhund',
+    price: null,
+    actor: [ 'Tabbu' ],
+    rating: 4
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'sholay',
+    actor: [
+      'Dharamendra',
+      'Amitabh',
+      'Sachin Pilgaokar',
+      'Dharamendra',
+      'Dharamendra',
+      'Mr. Khote',
+      'jaya bacchan',
+      'sanjiv kapoor'
+    ],
+    rating: 6,
+    ticket_no: 550,
+    price: 350,
+    position: [ 2, 2 ]
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'lagaan',
+    actor: [ 'amir', 'angraz' ],
+    rating: 6,
+    ticket_no: 410,
+    price: 350,
+    cancellation: {
+      date: Timestamp({ t: 1554356003, i: 1 }),
+      reason: 'user request'
+    },
+    lastModified: ISODate("2019-04-04T05:33:23.022Z")
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'uri',
+    rating: 5,
+    actor: [ 'vicky kaushal', 'yami', 'Paresh Rawal' ]
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    actor: [ 'Amitabh', 'vidya balan', 'Abhishek' ],
+    rating: 3,
+    price: 627,
+    ticket_no: 300,
+    rdate: ISODate("2019-01-23T00:00:00.000Z"),
+    others: { director: 'R Balki', songs: 'Amit trivedi' },
+    lastchange: ISODate("2024-04-03T14:36:03.984Z")
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'aradhana',
+    actor: [ 'amitabh', 'prem', 'rajesh khanna' ],
+    rating: 3,
+    ticket_no: 550,
+    price: 260
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'kahani 2',
+    ticket_no: 820,
+    actor: [
+      'vidya',  'Arjun',
+      'Jonny',  'nawaz',
+      'prasad', 'Shreyas',
+      'Jonny',  'yash'
+    ],
+    rating: 5,
+    price: 200
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'Kesari',
+    actor: [ 'Akshay Kumar', 'Pariniti chopra' ],
+    rating: 6,
+    price: 350,
+    ticket_no: 270,
+    rdate: ISODate("2019-01-23T00:00:00.000Z")
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    name: 'Andhadhund',
+    price: 400,
+    actor: [ 'Ayushman', 'radhika' ],
+    rating: 4
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 idiots',
+    actor: [ 'Kareena Kapoor', 'amir', 'kareena', 'mahadavan', 'sharman' ],
+    rating: 3,
+    ticket_no: 150,
+    price: 200
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    name: 'titanic',
+    price: 220,
+    ticket_num: 456,
+    release_date: ISODate("1997-03-02T00:00:00.000Z")
+  },
+  {
+    _id: ObjectId("660d20bf54cf913e506e7c2d"),
+    name: 'rrr',
+    rating: 'three',
+    price: 300
+  }
+]
+Type "it" for more
+iacsd0324> it
+[
+  {
+    _id: ObjectId("660d7947404a18df37e3304a"),
+    name: 'kashmir files',
+    price: 350,
+    rating: 5,
+    actor: [ 'darshan', 'yyyyyy', 'anupam kher', 'chinmay', 'pallavi joshi' ]
+  }
+]
+iacsd0324> db.movie.update({name:/'^kashmir/},{$push:{actor:{$each:['sss','ddd'],$position:1}}},{multi:true})
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+iacsd0324> db.movie.update({name:/'^kashmir'/},{$push:{actor:{$each:['sss','ddd'],$position:1}}},{multi:true})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+iacsd0324> db.movie.find({name:/^kashmir/})
+[
+  {
+    _id: ObjectId("660d7947404a18df37e3304a"),
+    name: 'kashmir files',
+    price: 350,
+    rating: 5,
+    actor: [ 'darshan', 'yyyyyy', 'anupam kher', 'chinmay', 'pallavi joshi' ]
+  }
+]
+iacsd0324> db.movie.update({name:/^kashmir/},{$push:{actor:{$each:['sss','ddd'],$position:1}}},{multi:true})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+iacsd0324> db.movie.find({name:/^kashmir/})
+[
+  {
+    _id: ObjectId("660d7947404a18df37e3304a"),
+    name: 'kashmir files',
+    price: 350,
+    rating: 5,
+    actor: [
+      'darshan',
+      'sss',
+      'ddd',
+      'yyyyyy',
+      'anupam kher',
+      'chinmay',
+      'pallavi joshi'
+    ]
+  }
+]
+iacsd0324> db.movie.updateMany({name:/^kashmir/},
+... {$pull:{actor:{$in:['sss','dddd','yyyyy']}});
+Uncaught:
+SyntaxError: Unexpected token, expected "," (2:43)
+
+  1 | db.movie.updateMany({name:/^kashmir/},
+> 2 | {$pull:{actor:{$in:['sss','dddd','yyyyy']}});
+    |                                            ^
+  3 |
+
+iacsd0324> db.movie.updateMany({name:/^kashmir/}, {$pull:{actor:{$in:['sss','dddd','yyyyy']}}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+iacsd0324> db.movie.find({name:/^kashmir/})
+[
+  {
+    _id: ObjectId("660d7947404a18df37e3304a"),
+    name: 'kashmir files',
+    price: 350,
+    rating: 5,
+    actor: [
+      'darshan',
+      'ddd',
+      'yyyyyy',
+      'anupam kher',
+      'chinmay',
+      'pallavi joshi'
+    ]
+  }
+]
+iacsd0324> use test
+switched to db test
+test> show collections
+emp
+emptab1
+test> show dbs
+EmployeeData    40.00 KiB
+admin           40.00 KiB
+config          96.00 KiB
+iacsd0324        4.14 MiB
+iacsd0324_dac    4.27 MiB
+iacsd0923        4.70 MiB
+local           88.00 KiB
+mydb             4.66 MiB
+mydb1          112.00 KiB
+test           144.00 KiB
+test> db.student.insert({no:1,name:'Revati,marks:[88,90,92]})
+Uncaught:
+SyntaxError: Unterminated string constant. (1:29)
+
+> 1 | db.student.insert({no:1,name:'Revati,marks:[88,90,92]})
+    |                              ^
+  2 |
+
+test> db.student.insert({no:1,name:'Revati',marks:[88,90,92]})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("660e6c4da348c48876e3194b") }
+}
+test> db.student.insert({no:2,name:'Rajan',marks:[78,95,92]})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("660e6c65a348c48876e3194c") }
+}
+test> db.student.insert({no:3,name:'Isha',marks:[78,77,82]})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("660e6c87a348c48876e3194d") }
+}
+test> db.student.find()
+[
+  {
+    _id: ObjectId("660e6c4da348c48876e3194b"),
+    no: 1,
+    name: 'Revati',
+    marks: [ 88, 90, 92 ]
+  },
+  {
+    _id: ObjectId("660e6c65a348c48876e3194c"),
+    no: 2,
+    name: 'Rajan',
+    marks: [ 78, 95, 92 ]
+  },
+  {
+    _id: ObjectId("660e6c87a348c48876e3194d"),
+    no: 3,
+    name: 'Isha',
+    marks: [ 78, 77, 82 ]
+  }
+]
+test> db.student.updateMany({marks:{$gte:90}},
+... {$inc:{'marks.$':5})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (2:19)
+
+  1 | db.student.updateMany({marks:{$gte:90}},
+> 2 | {$inc:{'marks.$':5})
+    |                    ^
+  3 |
+
+test> db.student.updateMany({marks:{$gte:90}}, {$inc:{'marks.$':5}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+test> db.student.find()
+[
+  {
+    _id: ObjectId("660e6c4da348c48876e3194b"),
+    no: 1,
+    name: 'Revati',
+    marks: [ 88, 95, 92 ]
+  },
+  {
+    _id: ObjectId("660e6c65a348c48876e3194c"),
+    no: 2,
+    name: 'Rajan',
+    marks: [ 78, 100, 92 ]
+  },
+  {
+    _id: ObjectId("660e6c87a348c48876e3194d"),
+    no: 3,
+    name: 'Isha',
+    marks: [ 78, 77, 82 ]
+  }
+]
+test> db.student.updateMany({name:/^R/},
+... {$inc:{'marks.$[]':5});
+Uncaught:
+SyntaxError: Unexpected token, expected "," (2:21)
+
+  1 | db.student.updateMany({name:/^R/},
+> 2 | {$inc:{'marks.$[]':5});
+    |                      ^
+  3 |
+
+test> db.student.updateMany({name:/^R/}, {$inc:{'marks.$[]':5}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+test> db.student.find()
+[
+  {
+    _id: ObjectId("660e6c4da348c48876e3194b"),
+    no: 1,
+    name: 'Revati',
+    marks: [ 93, 100, 97 ]
+  },
+  {
+    _id: ObjectId("660e6c65a348c48876e3194c"),
+    no: 2,
+    name: 'Rajan',
+    marks: [ 83, 105, 97 ]
+  },
+  {
+    _id: ObjectId("660e6c87a348c48876e3194d"),
+    no: 3,
+    name: 'Isha',
+    marks: [ 78, 77, 82 ]
+  }
+]
+test> db.student.update({},
+... {$inc:{'marks.$[element]':5}},
+... {arrayFilters:{element:{$gte:90}});
+Uncaught:
+SyntaxError: Unexpected token, expected "," (3:33)
+
+  1 | db.student.update({},
+  2 | {$inc:{'marks.$[element]':5}},
+> 3 | {arrayFilters:{element:{$gte:90}});
+    |                                  ^
+  4 |
+
+test> db.student.update({}, {$inc:{'marks.$[element]':5}}, {arrayFilters:{element:{$gte:90}}});
+MongoServerError: BSON field 'update.updates.arrayFilters' is the wrong type 'object', expected type 'array'
+test> db.student.update({}, {$inc:{'marks.$[element]':5}}, {arrayFilters:[{element:{$gte:90}}]);
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:88)
+
+> 1 | db.student.update({}, {$inc:{'marks.$[element]':5}}, {arrayFilters:[{element:{$gte:90}}]);
+    |                                                                                         ^
+  2 |
+
+test> db.student.update({},
+... {$inc:{'marks.$[element]':5}},
+... {arrayFilters:{element:{$gte:90}}})
+MongoServerError: BSON field 'update.updates.arrayFilters' is the wrong type 'object', expected type 'array'
+test>
+
+test> db.student.update({},
+... {$inc:{'marks.$[element]':5}},
+... {arrayFilters:[{element:{$gte:90}}]});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+test> db.student.update({}, { $inc: { 'marks.$[element]': 5 } }, { arrayFilters: [{ element: { $gte: 90 } }],multi:true });
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+test> db.student.find()
+[
+  {
+    _id: ObjectId("660e6c4da348c48876e3194b"),
+    no: 1,
+    name: 'Revati',
+    marks: [ 103, 110, 107 ]
+  },
+  {
+    _id: ObjectId("660e6c65a348c48876e3194c"),
+    no: 2,
+    name: 'Rajan',
+    marks: [ 83, 110, 102 ]
+  },
+  {
+    _id: ObjectId("660e6c87a348c48876e3194d"),
+    no: 3,
+    name: 'Isha',
+    marks: [ 78, 77, 82 ]
+  }
+]
+test> db.students3.insertMany( [
+...    {
+...       "_id" : 1,
+...       "grades" : [
+...          { "grade" : 80, "mean" : 75, "std" : 6 },
+...          { "grade" : 85, "mean" : 100, "std" : 4 },
+...          { "grade" : 85, "mean" : 100, "std" : 6 }
+...       ]
+...    },
+...    {
+...       "_id" : 2,
+...       "grades" : [
+...          { "grade" : 90, "mean" : 100, "std" : 6 },
+...          { "grade" : 87, "mean" : 100, "std" : 3 },
+...          { "grade" : 85, "mean" : 100, "std" : 4 }
+...       ]
+...    }
+... ] )
+{ acknowledged: true, insertedIds: { '0': 1, '1': 2 } }
+test> db.student3.updateMany({grades.std:6},{$inc:{'grades.$.grade':2}});
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:30)
+
+> 1 | db.student3.updateMany({grades.std:6},{$inc:{'grades.$.grade':2}});
+    |                               ^
+  2 |
+
+test> db.student3.updateMany({'grades.std':6},{$inc:{'grades.$.grade':2}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+test> db.student3.find({'grades.std':6})
+
+test> db.student3.find({'grades.mean':100})
+
+test> db.students3.find({'grades.mean':100})
+[
+  {
+    _id: 1,
+    grades: [
+      { grade: 80, mean: 75, std: 6 },
+      { grade: 85, mean: 100, std: 4 },
+      { grade: 85, mean: 100, std: 6 }
+    ]
+  },
+  {
+    _id: 2,
+    grades: [
+      { grade: 90, mean: 100, std: 6 },
+      { grade: 87, mean: 100, std: 3 },
+      { grade: 85, mean: 100, std: 4 }
+    ]
+  }
+]
+test> db.students3.updateMany({'grades.std':6},{$inc:{'grades.$.grade':2}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+test> db.students3.find({'grades.mean':100})
+[
+  {
+    _id: 1,
+    grades: [
+      { grade: 82, mean: 75, std: 6 },
+      { grade: 85, mean: 100, std: 4 },
+      { grade: 85, mean: 100, std: 6 }
+    ]
+  },
+  {
+    _id: 2,
+    grades: [
+      { grade: 92, mean: 100, std: 6 },
+      { grade: 87, mean: 100, std: 3 },
+      { grade: 85, mean: 100, std: 4 }
+    ]
+  }
+]
+test> db.students3.updateMany({},{$inc:{'grades.$.grade':2}},
+... {arrayFilters:[{'elem.std':{$eq:6}}]})
+MongoServerError: The array filter for identifier 'elem' was not used in the update { $inc: { grades.$.grade: 2 } }
+test> db.students3.updateMany({}, { $inc: { 'grades.$[elem].grade': 2 } }, { arrayFilters: [{ 'elem.std': { $eq: 6 } }] })
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+test> db.students3.find({'grades.mean':100})
+[
+  {
+    _id: 1,
+    grades: [
+      { grade: 84, mean: 75, std: 6 },
+      { grade: 85, mean: 100, std: 4 },
+      { grade: 87, mean: 100, std: 6 }
+    ]
+  },
+  {
+    _id: 2,
+    grades: [
+      { grade: 94, mean: 100, std: 6 },
+      { grade: 87, mean: 100, std: 3 },
+      { grade: 85, mean: 100, std: 4 }
+    ]
+  }
+]
+test> use iacsd0324;
+switched to db iacsd0324
+iacsd0324> show collections
+movie
+restaurent
+iacsd0324> use mydb1
+switched to db mydb1
+mydb1> show collections
+emp
+employee
+mydb1> db.emp.find();
+[
+  {
+    _id: ObjectId("660c21b747e155487f7cc952"),
+    deptno: 12,
+    ename: 12,
+    dname: 'xxx'
+  }
+]
+mydb1> db.emp.insert({empno:1,ename:'xxx'})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("660e7b84a348c48876e3194e") }
+}
+mydb1> db.emp.insert({empno:12,ename:'yyyy'})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("660e7b90a348c48876e3194f") }
+}
+mydb1> db.emp.insert({empno:13,ename:'zzz'})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("660e7b9da348c48876e31950") }
+}
+mydb1> db.emp.insert({empno:14,ename:'zzz1111'})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId("660e7ba9a348c48876e31951") }
+}
+mydb1> db.emp.find();
+[
+  {
+    _id: ObjectId("660c21b747e155487f7cc952"),
+    deptno: 12,
+    ename: 12,
+    dname: 'xxx'
+  },
+  { _id: ObjectId("660e7b84a348c48876e3194e"), empno: 1, ename: 'xxx' },
+  {
+    _id: ObjectId("660e7b90a348c48876e3194f"),
+    empno: 12,
+    ename: 'yyyy'
+  },
+  {
+    _id: ObjectId("660e7b9da348c48876e31950"),
+    empno: 13,
+    ename: 'zzz'
+  },
+  {
+    _id: ObjectId("660e7ba9a348c48876e31951"),
+    empno: 14,
+    ename: 'zzz1111'
+  }
+]
+mydb1> db.emp.deleteOne({emono:{$gte:12}})
+{ acknowledged: true, deletedCount: 0 }
+mydb1> db.emp.deleteOne({empno:{$gte:12}})
+{ acknowledged: true, deletedCount: 1 }
+mydb1> db.emp.find();
+[
+  {
+    _id: ObjectId("660c21b747e155487f7cc952"),
+    deptno: 12,
+    ename: 12,
+    dname: 'xxx'
+  },
+  { _id: ObjectId("660e7b84a348c48876e3194e"), empno: 1, ename: 'xxx' },
+  {
+    _id: ObjectId("660e7b9da348c48876e31950"),
+    empno: 13,
+    ename: 'zzz'
+  },
+  {
+    _id: ObjectId("660e7ba9a348c48876e31951"),
+    empno: 14,
+    ename: 'zzz1111'
+  }
+]
+mydb1> db.emp.deleteMany({empno:{$gte:12}})
+{ acknowledged: true, deletedCount: 2 }
+mydb1> use iacsd0324
+switched to db iacsd0324
+iacsd0324> db.movie.getIndexes()
+[ { v: 2, key: { _id: 1 }, name: '_id_' } ]
+iacsd0324> db.movie.createIndex({rating:1})
+rating_1
+iacsd0324> db.movie.getIndexes()
+[
+  { v: 2, key: { _id: 1 }, name: '_id_' },
+  { v: 2, key: { rating: 1 }, name: 'rating_1' }
+]
+iacsd0324> db.movie.createIndex({rating:1.price:-1})
+Uncaught:
+SyntaxError: Identifier directly after number. (1:31)
+
+> 1 | db.movie.createIndex({rating:1.price:-1})
+    |                                ^
+  2 |
+
+iacsd0324> db.movie.createIndex({rating:1,price:-1})
+rating_1_price_-1
+iacsd0324> db.movie.getIndexes()
+[
+  { v: 2, key: { _id: 1 }, name: '_id_' },
+  { v: 2, key: { rating: 1 }, name: 'rating_1' },
+  { v: 2, key: { rating: 1, price: -1 }, name: 'rating_1_price_-1' }
+]
+iacsd0324> db.movie.dropIndex('rating_1_price_1;)
+Uncaught:
+SyntaxError: Unterminated string constant. (1:19)
+
+> 1 | db.movie.dropIndex('rating_1_price_1;)
+    |                    ^
+  2 |
+
+iacsd0324> db.movie.dropIndex('rating_1_price_1')
+MongoshInternalError: index not found with name [rating_1_price_1]
+iacsd0324> db.movie.dropIndex('rating_1_price-1')
+MongoshInternalError: index not found with name [rating_1_price-1]
+iacsd0324> db.movie.dropIndex('rating_1_price_-1')
+{ nIndexesWas: 3, ok: 1 }
+iacsd0324> db.movie.getIndexes()
+[
+  { v: 2, key: { _id: 1 }, name: '_id_' },
+  { v: 2, key: { rating: 1 }, name: 'rating_1' }
+]
+iacsd0324> db.movie.aggreagate([
+... {$sort:{rating:1}},
+... {$skip:2},
+... {$limit:3},
+... {$sort:{name:1}}
+... ]);
+TypeError: db.movie.aggreagate is not a function
+iacsd0324> db.movie.aggregate([ { $sort: { rating: 1 } }, { $skip: 2 }, { $limit: 3 }, { $sort: { name: 1 } }] );
+[
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    actor: [ 'Amitabh', 'vidya balan', 'Abhishek' ],
+    rating: 3,
+    price: 627,
+    ticket_no: 300,
+    rdate: ISODate("2019-01-23T00:00:00.000Z"),
+    others: { director: 'R Balki', songs: 'Amit trivedi' },
+    lastchange: ISODate("2024-04-03T14:36:03.984Z")
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    price: 825.0000000000001,
+    ticket_no: 300,
+    actor: [
+      'Deepika',
+      'shahid kapoor',
+      'ranveer singh',
+      'aditi Rao',
+      'aaaaa'
+    ],
+    cancellation: { date: Timestamp({ t: 1567175239, i: 1 }) },
+    lastchange: ISODate("2024-04-03T14:36:03.983Z")
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    name: 'titanic',
+    price: 220,
+    ticket_num: 456,
+    release_date: ISODate("1997-03-02T00:00:00.000Z")
+  }
+]
+iacsd0324> db.movie.aggreagate([
+... {$sort:{rating:1}},
+... {$skip:2},
+... {$limit:3},
+... {$sort:{name:1}},
+... {$project:{name:1,rating:1,price:1,addition:{$add:['$rating','$price']}_id:0}}
+Uncaught:
+SyntaxError: Unexpected token, expected "," (6:71)
+
+  4 | {$limit:3},
+  5 | {$sort:{name:1}},
+> 6 | {$project:{name:1,rating:1,price:1,addition:{$add:['$rating','$price']}_id:0}}
+    |                                                                        ^
+  7 |
+
+iacsd0324> db.movie.aggreagate([
+... {$sort:{rating:1}},
+... {$skip:2},
+... {$limit:3},
+... {$sort:{name:1}},
+... {$project:{name:1,rating:1,price:1,
+... addition:{$add:['$rating','$price']},_id:0}}
+... ]);
+TypeError: db.movie.aggreagate is not a function
+iacsd0324> db.movie.aggregate([
+... {$sort:{rating:1}},
+... {$skip:2},
+... {$limit:3},
+... {$sort:{name:1}},
+... {$project:{name:1,rating:1,price:1,
+... addition:{$add:['$rating','$price']},_id:0}}
+... ]);
+[
+  { name: 'paa', rating: 3, price: 627, addition: 630 },
+  {
+    name: 'padmavat',
+    rating: 3,
+    price: 825.0000000000001,
+    addition: 828.0000000000001
+  },
+  { name: 'titanic', price: 220, addition: null }
+]
+iacsd0324> db.movie.aggregate([
+... {$project:{name:1,actor:1,rating:1,
+... price:1,ticket_no:1,
+... sumtp:{$add:['$ticket_no','$price']}}}
+... ]);
+[
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    name: 'Dil dhadakane do',
+    rating: 13,
+    price: 540,
+    actor: "['Anil kapoor']",
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'kahani',
+    actor: [ 'aaaa', 'bbbb', 'karan', 'karri', 'vidya' ],
+    ticket_no: 420,
+    price: 400,
+    rating: 18,
+    sumtp: 820
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'newton',
+    ticket_no: 690,
+    actor: [ 'Rajkumar Rao', 'Pankaj Tripathi' ],
+    price: 510,
+    rating: 10,
+    sumtp: 1200
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    name: 'mission mangal',
+    price: 550,
+    actor: [ 'Sonakshi', 'Vidya Balan' ],
+    rating: 16,
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    price: 825.0000000000001,
+    ticket_no: 300,
+    actor: [
+      'Deepika',
+      'shahid kapoor',
+      'ranveer singh',
+      'aditi Rao',
+      'aaaaa'
+    ],
+    sumtp: 1125
+  },
+  {
+    _id: ObjectId("5d8f51ce065d3e2aa902aa22"),
+    name: 'dream girl',
+    actor: [ 'ayushman', 'nushrat bharucha' ],
+    price: 450,
+    rating: null,
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    name: 'chichore',
+    price: 474,
+    rating: 4.3,
+    actor: [ 'sushant', 'shradha kapoor', 'zzz', 'harshal' ],
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5d8f6eec620d2353221b91dd"),
+    price: 480,
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    name: 'Andhadhund',
+    price: null,
+    actor: [ 'Tabbu' ],
+    rating: 4,
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'sholay',
+    actor: [
+      'Dharamendra',
+      'Amitabh',
+      'Sachin Pilgaokar',
+      'Dharamendra',
+      'Dharamendra',
+      'Mr. Khote',
+      'jaya bacchan',
+      'sanjiv kapoor'
+    ],
+    rating: 6,
+    ticket_no: 550,
+    price: 350,
+    sumtp: 900
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'lagaan',
+    actor: [ 'amir', 'angraz' ],
+    rating: 6,
+    ticket_no: 410,
+    price: 350,
+    sumtp: 760
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'uri',
+    rating: 5,
+    actor: [ 'vicky kaushal', 'yami', 'Paresh Rawal' ],
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    actor: [ 'Amitabh', 'vidya balan', 'Abhishek' ],
+    rating: 3,
+    price: 627,
+    ticket_no: 300,
+    sumtp: 927
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'aradhana',
+    actor: [ 'amitabh', 'prem', 'rajesh khanna' ],
+    rating: 3,
+    ticket_no: 550,
+    price: 260,
+    sumtp: 810
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'kahani 2',
+    ticket_no: 820,
+    actor: [
+      'vidya',  'Arjun',
+      'Jonny',  'nawaz',
+      'prasad', 'Shreyas',
+      'Jonny',  'yash'
+    ],
+    rating: 5,
+    price: 200,
+    sumtp: 1020
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'Kesari',
+    actor: [ 'Akshay Kumar', 'Pariniti chopra' ],
+    rating: 6,
+    price: 350,
+    ticket_no: 270,
+    sumtp: 620
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    name: 'Andhadhund',
+    price: 400,
+    actor: [ 'Ayushman', 'radhika' ],
+    rating: 4,
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 idiots',
+    actor: [ 'Kareena Kapoor', 'amir', 'kareena', 'mahadavan', 'sharman' ],
+    rating: 3,
+    ticket_no: 150,
+    price: 200,
+    sumtp: 350
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    name: 'titanic',
+    price: 220,
+    sumtp: null
+  },
+  {
+    _id: ObjectId("660d20bf54cf913e506e7c2d"),
+    name: 'rrr',
+    rating: 'three',
+    price: 300,
+    sumtp: null
+  }
+]
+Type "it" for more
+iacsd0324> {$project:{name:1,actor:1,rating:1,
+... price:1,ticket_no:1,
+... sumtp:{$add:[{$ifNull:['$ticket_no',0]},'$price']}}}
+... ]);
+Uncaught:
+SyntaxError: Missing semicolon. (1:23)
+
+> 1 | {$project:{name:1,actor:1,rating:1,
+    |                        ^
+  2 | price:1,ticket_no:1,
+  3 | sumtp:{$add:[{$ifNull:['$ticket_no',0]},'$price']}}}
+  4 | ]);
+
+iacsd0324> db.movie.aggregate([
+... {$project:{name:1,actor:1,rating:1,
+... price:1,ticket_no:1,
+... sumtp:{$add:[{$ifNull:['$ticket_no',0]},'$price']}}}
+... ]);
+[
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    name: 'Dil dhadakane do',
+    rating: 13,
+    price: 540,
+    actor: "['Anil kapoor']",
+    sumtp: 540
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'kahani',
+    actor: [ 'aaaa', 'bbbb', 'karan', 'karri', 'vidya' ],
+    ticket_no: 420,
+    price: 400,
+    rating: 18,
+    sumtp: 820
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'newton',
+    ticket_no: 690,
+    actor: [ 'Rajkumar Rao', 'Pankaj Tripathi' ],
+    price: 510,
+    rating: 10,
+    sumtp: 1200
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    name: 'mission mangal',
+    price: 550,
+    actor: [ 'Sonakshi', 'Vidya Balan' ],
+    rating: 16,
+    sumtp: 550
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    price: 825.0000000000001,
+    ticket_no: 300,
+    actor: [
+      'Deepika',
+      'shahid kapoor',
+      'ranveer singh',
+      'aditi Rao',
+      'aaaaa'
+    ],
+    sumtp: 1125
+  },
+  {
+    _id: ObjectId("5d8f51ce065d3e2aa902aa22"),
+    name: 'dream girl',
+    actor: [ 'ayushman', 'nushrat bharucha' ],
+    price: 450,
+    rating: null,
+    sumtp: 450
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    name: 'chichore',
+    price: 474,
+    rating: 4.3,
+    actor: [ 'sushant', 'shradha kapoor', 'zzz', 'harshal' ],
+    sumtp: 474
+  },
+  { _id: ObjectId("5d8f6eec620d2353221b91dd"), price: 480, sumtp: 480 },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    name: 'Andhadhund',
+    price: null,
+    actor: [ 'Tabbu' ],
+    rating: 4,
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'sholay',
+    actor: [
+      'Dharamendra',
+      'Amitabh',
+      'Sachin Pilgaokar',
+      'Dharamendra',
+      'Dharamendra',
+      'Mr. Khote',
+      'jaya bacchan',
+      'sanjiv kapoor'
+    ],
+    rating: 6,
+    ticket_no: 550,
+    price: 350,
+    sumtp: 900
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'lagaan',
+    actor: [ 'amir', 'angraz' ],
+    rating: 6,
+    ticket_no: 410,
+    price: 350,
+    sumtp: 760
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'uri',
+    rating: 5,
+    actor: [ 'vicky kaushal', 'yami', 'Paresh Rawal' ],
+    sumtp: null
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    actor: [ 'Amitabh', 'vidya balan', 'Abhishek' ],
+    rating: 3,
+    price: 627,
+    ticket_no: 300,
+    sumtp: 927
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'aradhana',
+    actor: [ 'amitabh', 'prem', 'rajesh khanna' ],
+    rating: 3,
+    ticket_no: 550,
+    price: 260,
+    sumtp: 810
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'kahani 2',
+    ticket_no: 820,
+    actor: [
+      'vidya',  'Arjun',
+      'Jonny',  'nawaz',
+      'prasad', 'Shreyas',
+      'Jonny',  'yash'
+    ],
+    rating: 5,
+    price: 200,
+    sumtp: 1020
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'Kesari',
+    actor: [ 'Akshay Kumar', 'Pariniti chopra' ],
+    rating: 6,
+    price: 350,
+    ticket_no: 270,
+    sumtp: 620
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    name: 'Andhadhund',
+    price: 400,
+    actor: [ 'Ayushman', 'radhika' ],
+    rating: 4,
+    sumtp: 400
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 idiots',
+    actor: [ 'Kareena Kapoor', 'amir', 'kareena', 'mahadavan', 'sharman' ],
+    rating: 3,
+    ticket_no: 150,
+    price: 200,
+    sumtp: 350
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    name: 'titanic',
+    price: 220,
+    sumtp: 220
+  },
+  {
+    _id: ObjectId("660d20bf54cf913e506e7c2d"),
+    name: 'rrr',
+    rating: 'three',
+    price: 300,
+    sumtp: 300
+  }
+]
+Type "it" for more
+iacsd0324> db.movie.aggregate([
+... {$match:{price:{$nin:[null],$exists:true},
+... ticket_no:{$nin:[null],$exists:true}}},
+... {$project:{name:{$toUpper:'$name'},price:1,
+... ticket_no:1,
+... differ:{$subtract:['$price','$ticket_no']}}}
+... ]);
+[
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'KAHANI',
+    ticket_no: 420,
+    price: 400,
+    differ: -20
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'NEWTON',
+    ticket_no: 690,
+    price: 510,
+    differ: -180
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'PADMAVAT',
+    price: 825.0000000000001,
+    ticket_no: 300,
+    differ: 525.0000000000001
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'SHOLAY',
+    ticket_no: 550,
+    price: 350,
+    differ: -200
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'LAGAAN',
+    ticket_no: 410,
+    price: 350,
+    differ: -60
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'PAA',
+    price: 627,
+    ticket_no: 300,
+    differ: 327
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'ARADHANA',
+    ticket_no: 550,
+    price: 260,
+    differ: -290
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'KAHANI 2',
+    ticket_no: 820,
+    price: 200,
+    differ: -620
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'KESARI',
+    price: 350,
+    ticket_no: 270,
+    differ: 80
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 IDIOTS',
+    ticket_no: 150,
+    price: 200,
+    differ: 50
+  }
+]
+iacsd0324> db.movie.aggregate([
+... {$match:{rating:{$gte:3}}},
+... {$project:{name:1,price:1,rating:1,
+... discount1:{$multiply:['$price',0.90]},
+... discount2:{$subtract:['$price',{$multiply:['$price',0.10]}]}
+... }
+... ]);
+Uncaught:
+SyntaxError: Unexpected token, expected "," (7:0)
+
+  5 | discount2:{$subtract:['$price',{$multiply:['$price',0.10]}]}
+  6 | }
+> 7 | ]);
+    | ^
+  8 |
+
+iacsd0324> db.movie.aggregate([ {$match:{rating:{$gte:3}}}, {$project:{name:1,price:1,rating:1, discount1:{$multiply:['$price',0.90]}, discount2:{$subtract:['$price',{$multiply:['$price',0.10]}]} }} ]);
+[
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    price: 825.0000000000001,
+    discount1: 742.5000000000001,
+    discount2: 742.5000000000001
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    rating: 3,
+    price: 627,
+    discount1: 564.3000000000001,
+    discount2: 564.3
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'aradhana',
+    rating: 3,
+    price: 260,
+    discount1: 234,
+    discount2: 234
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 idiots',
+    rating: 3,
+    price: 200,
+    discount1: 180,
+    discount2: 180
+  },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    name: 'Andhadhund',
+    price: null,
+    rating: 4,
+    discount1: null,
+    discount2: null
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    name: 'Andhadhund',
+    price: 400,
+    rating: 4,
+    discount1: 360,
+    discount2: 360
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    name: 'chichore',
+    price: 474,
+    rating: 4.3,
+    discount1: 426.6,
+    discount2: 426.6
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'uri',
+    rating: 5,
+    discount1: null,
+    discount2: null
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'kahani 2',
+    rating: 5,
+    price: 200,
+    discount1: 180,
+    discount2: 180
+  },
+  {
+    _id: ObjectId("660d7947404a18df37e3304a"),
+    name: 'kashmir files',
+    price: 350,
+    rating: 5,
+    discount1: 315,
+    discount2: 315
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'sholay',
+    rating: 6,
+    price: 350,
+    discount1: 315,
+    discount2: 315
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'lagaan',
+    rating: 6,
+    price: 350,
+    discount1: 315,
+    discount2: 315
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'Kesari',
+    rating: 6,
+    price: 350,
+    discount1: 315,
+    discount2: 315
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'newton',
+    price: 510,
+    rating: 10,
+    discount1: 459,
+    discount2: 459
+  },
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    name: 'Dil dhadakane do',
+    rating: 13,
+    price: 540,
+    discount1: 486,
+    discount2: 486
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    name: 'mission mangal',
+    price: 550,
+    rating: 16,
+    discount1: 495,
+    discount2: 495
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'kahani',
+    price: 400,
+    rating: 18,
+    discount1: 360,
+    discount2: 360
+  }
+]
+iacsd0324> db.movie.aggregate([
+... {$project:{name:{$toupper:'$name'},price:1,
+... mcode:{$substr:['$name',0,3]}}}
+... ]);
+MongoServerError: Invalid $project :: caused by :: Unknown expression $toupper
+iacsd0324> db.movie.aggregate([
+... {$project:{name:{$toUpper:'$name'},price:1,
+... mcode:{$substr:['$name',0,3]}}}
+... ]);
+[
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    price: 540,
+    name: 'DIL DHADAKANE DO',
+    mcode: 'Dil'
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    price: 400,
+    name: 'KAHANI',
+    mcode: 'kah'
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    price: 510,
+    name: 'NEWTON',
+    mcode: 'new'
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    price: 550,
+    name: 'MISSION MANGAL',
+    mcode: 'mis'
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    price: 825.0000000000001,
+    name: 'PADMAVAT',
+    mcode: 'pad'
+  },
+  {
+    _id: ObjectId("5d8f51ce065d3e2aa902aa22"),
+    price: 450,
+    name: 'DREAM GIRL',
+    mcode: 'dre'
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    price: 474,
+    name: 'CHICHORE',
+    mcode: 'chi'
+  },
+  {
+    _id: ObjectId("5d8f6eec620d2353221b91dd"),
+    price: 480,
+    name: '',
+    mcode: ''
+  },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    price: null,
+    name: 'ANDHADHUND',
+    mcode: 'And'
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    price: 350,
+    name: 'SHOLAY',
+    mcode: 'sho'
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    price: 350,
+    name: 'LAGAAN',
+    mcode: 'lag'
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'URI',
+    mcode: 'uri'
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    price: 627,
+    name: 'PAA',
+    mcode: 'paa'
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    price: 260,
+    name: 'ARADHANA',
+    mcode: 'ara'
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    price: 200,
+    name: 'KAHANI 2',
+    mcode: 'kah'
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    price: 350,
+    name: 'KESARI',
+    mcode: 'Kes'
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    price: 400,
+    name: 'ANDHADHUND',
+    mcode: 'And'
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    price: 200,
+    name: '3 IDIOTS',
+    mcode: '3 i'
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    price: 220,
+    name: 'TITANIC',
+    mcode: 'tit'
+  },
+  {
+    _id: ObjectId("660d20bf54cf913e506e7c2d"),
+    price: 300,
+    name: 'RRR',
+    mcode: 'rrr'
+  }
+]
+Type "it" for more
+iacsd0324> db.movie.aggregate([
+... {$project:{name:1,rating:1,
+... release_date:1,ryear:{$year:'$release_date}},
+Uncaught:
+SyntaxError: Unterminated string constant. (3:28)
+
+  1 | db.movie.aggregate([
+  2 | {$project:{name:1,rating:1,
+> 3 | release_date:1,ryear:{$year:'$release_date}},
+    |                             ^
+  4 |
+
+iacsd0324> {$project:{name:1,rating:1,release_date:1,ryear:1,
+... numy:{$subtract:[{$year:new Date(),'$ryear'}]}}}
+Uncaught:
+SyntaxError: Missing semicolon. (1:24)
+
+> 1 | {$project:{name:1,rating:1,release_date:1,ryear:1,
+    |                         ^
+  2 | numy:{$subtract:[{$year:new Date(),'$ryear'}]}}}
+  3 |
+
+iacsd0324> db.movie.aggregate([
+... {$project:{name:1,rating:1,
+... release_date:1,ryear:{$year:'$release_date'}},
+... {$project:{name:1,rating:1,release_date:1,ryear:1,
+Uncaught:
+SyntaxError: Unexpected token (4:0)
+
+  2 | {$project:{name:1,rating:1,
+  3 | release_date:1,ryear:{$year:'$release_date'}},
+> 4 | {$project:{name:1,rating:1,release_date:1,ryear:1,
+    | ^
+  5 |
+
+iacsd0324> numy:{$subtract:[{$year:new Date(),'$ryear'}]}}}
+Uncaught:
+SyntaxError: Unexpected token (1:43)
+
+> 1 | numy:{$subtract:[{$year:new Date(),'$ryear'}]}}}
+    |                                            ^
+  2 |
+
+iacsd0324> db.movie.aggregate([
+... {$project:{name:1,rating:1,
+... release_date:1,ryear:{$year:'$release_date'}}},
+... {$project:{name:1,rating:1,release_date:1,ryear:1,
+... numy:{$subtract:[{$year:new Date(),'$ryear'}]}}}
+Uncaught:
+SyntaxError: Unexpected token (5:43)
+
+  3 | release_date:1,ryear:{$year:'$release_date'}}},
+  4 | {$project:{name:1,rating:1,release_date:1,ryear:1,
+> 5 | numy:{$subtract:[{$year:new Date(),'$ryear'}]}}}
+    |                                            ^
+  6 |
+
+iacsd0324> db.movie.aggregate([
+... {$project:{name:1,rating:1,
+... release_date:1,ryear:{$year:'$release_date'}}},
+... {$project:{name:1,rating:1,release_date:1,ryear:1,
+... numy:{$subtract:[{$year:new Date()},'$ryear']}}}
+... ]);
+[
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    name: 'Dil dhadakane do',
+    rating: 13,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'kahani',
+    rating: 18,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'newton',
+    rating: 10,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    name: 'mission mangal',
+    rating: 16,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d8f51ce065d3e2aa902aa22"),
+    name: 'dream girl',
+    rating: null,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    name: 'chichore',
+    rating: 4.3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d8f6eec620d2353221b91dd"),
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    name: 'Andhadhund',
+    rating: 4,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'sholay',
+    rating: 6,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'lagaan',
+    rating: 6,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'uri',
+    rating: 5,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    rating: 3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'aradhana',
+    rating: 3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'kahani 2',
+    rating: 5,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'Kesari',
+    rating: 6,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    name: 'Andhadhund',
+    rating: 4,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 idiots',
+    rating: 3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    name: 'titanic',
+    release_date: ISODate("1997-03-02T00:00:00.000Z"),
+    ryear: 1997,
+    numy: 27
+  },
+  {
+    _id: ObjectId("660d20bf54cf913e506e7c2d"),
+    name: 'rrr',
+    rating: 'three',
+    ryear: null,
+    numy: null
+  }
+]
+Type "it" for more
+iacsd0324> db.movie.find();
+[
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    name: 'Dil dhadakane do',
+    rating: 13,
+    price: 540,
+    actor: "['Anil kapoor']"
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'kahani',
+    actor: [ 'aaaa', 'bbbb', 'karan', 'karri', 'vidya' ],
+    ticket_no: 420,
+    price: 400,
+    ac7tors: [ 'bbbb' ],
+    rating: 18,
+    lastmodified: ISODate("2019-04-07T11:25:40.634Z")
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'newton',
+    ticket_no: 690,
+    actor: [ 'Rajkumar Rao', 'Pankaj Tripathi' ],
+    price: 510,
+    lastmodified: ISODate("2019-09-28T14:47:49.204Z"),
+    rating: 10
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    name: 'mission mangal',
+    price: 550,
+    actor: [ 'Sonakshi', 'Vidya Balan' ],
+    rating: 16
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    price: 825.0000000000001,
+    ticket_no: 300,
+    actor: [
+      'Deepika',
+      'shahid kapoor',
+      'ranveer singh',
+      'aditi Rao',
+      'aaaaa'
+    ],
+    cancellation: { date: Timestamp({ t: 1567175239, i: 1 }) },
+    lastchange: ISODate("2024-04-03T14:36:03.983Z")
+  },
+  {
+    _id: ObjectId("5d8f51ce065d3e2aa902aa22"),
+    name: 'dream girl',
+    actor: [ 'ayushman', 'nushrat bharucha' ],
+    price: 450,
+    rating: null
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    name: 'chichore',
+    price: 474,
+    rating: 4.3,
+    actor: [ 'sushant', 'shradha kapoor', 'zzz', 'harshal' ]
+  },
+  { _id: ObjectId("5d8f6eec620d2353221b91dd"), price: 480 },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    name: 'Andhadhund',
+    price: null,
+    actor: [ 'Tabbu' ],
+    rating: 4
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'sholay',
+    actor: [
+      'Dharamendra',
+      'Amitabh',
+      'Sachin Pilgaokar',
+      'Dharamendra',
+      'Dharamendra',
+      'Mr. Khote',
+      'jaya bacchan',
+      'sanjiv kapoor'
+    ],
+    rating: 6,
+    ticket_no: 550,
+    price: 350,
+    position: [ 2, 2 ]
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'lagaan',
+    actor: [ 'amir', 'angraz' ],
+    rating: 6,
+    ticket_no: 410,
+    price: 350,
+    cancellation: {
+      date: Timestamp({ t: 1554356003, i: 1 }),
+      reason: 'user request'
+    },
+    lastModified: ISODate("2019-04-04T05:33:23.022Z")
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'uri',
+    rating: 5,
+    actor: [ 'vicky kaushal', 'yami', 'Paresh Rawal' ]
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    actor: [ 'Amitabh', 'vidya balan', 'Abhishek' ],
+    rating: 3,
+    price: 627,
+    ticket_no: 300,
+    rdate: ISODate("2019-01-23T00:00:00.000Z"),
+    others: { director: 'R Balki', songs: 'Amit trivedi' },
+    lastchange: ISODate("2024-04-03T14:36:03.984Z")
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'aradhana',
+    actor: [ 'amitabh', 'prem', 'rajesh khanna' ],
+    rating: 3,
+    ticket_no: 550,
+    price: 260
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'kahani 2',
+    ticket_no: 820,
+    actor: [
+      'vidya',  'Arjun',
+      'Jonny',  'nawaz',
+      'prasad', 'Shreyas',
+      'Jonny',  'yash'
+    ],
+    rating: 5,
+    price: 200
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'Kesari',
+    actor: [ 'Akshay Kumar', 'Pariniti chopra' ],
+    rating: 6,
+    price: 350,
+    ticket_no: 270,
+    rdate: ISODate("2019-01-23T00:00:00.000Z")
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    name: 'Andhadhund',
+    price: 400,
+    actor: [ 'Ayushman', 'radhika' ],
+    rating: 4
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 idiots',
+    actor: [ 'Kareena Kapoor', 'amir', 'kareena', 'mahadavan', 'sharman' ],
+    rating: 3,
+    ticket_no: 150,
+    price: 200
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    name: 'titanic',
+    price: 220,
+    ticket_num: 456,
+    release_date: ISODate("1997-03-02T00:00:00.000Z")
+  },
+  {
+    _id: ObjectId("660d20bf54cf913e506e7c2d"),
+    name: 'rrr',
+    rating: 'three',
+    price: 300
+  }
+]
+Type "it" for more
+iacsd0324> db.movie.aggregate([
+... {$project:{name:1,rating:1,
+... release_date:1,ryear:{$year:'$rdate'}}},
+... {$project:{name:1,rating:1,rdate:1,ryear:1,
+... numy:{$subtract:[{$year:new Date()},'$ryear']}}}
+... ]);
+[
+  {
+    _id: ObjectId("5c865923d82c19b8ed996550"),
+    name: 'Dil dhadakane do',
+    rating: 13,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa31a2639395f86922a87e"),
+    name: 'kahani',
+    rating: 18,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca47ef82952ebdd7ae2a932"),
+    name: 'newton',
+    rating: 10,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d6935a3470e2bef2a82cdfa"),
+    name: 'mission mangal',
+    rating: 16,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca47e5b2952ebdd7ae2a931"),
+    name: 'padmavat',
+    rating: 3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d8f51ce065d3e2aa902aa22"),
+    name: 'dream girl',
+    rating: null,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d89e9adfd4adc2f84279f43"),
+    name: 'chichore',
+    rating: 4.3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5d8f6eec620d2353221b91dd"),
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5bf6a38c57b2d4cc676c7a96"),
+    name: 'Andhadhund',
+    rating: 4,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a881"),
+    name: 'sholay',
+    rating: 6,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a880"),
+    name: 'lagaan',
+    rating: 6,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5c8283789eb55675f0272933"),
+    name: 'uri',
+    rating: 5,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca456072952ebdd7ae2a930"),
+    name: 'paa',
+    rating: 3,
+    ryear: 2019,
+    numy: 5
+  },
+  {
+    _id: ObjectId("5aaa3334639395f86922a882"),
+    name: 'aradhana',
+    rating: 3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aab6da4639395f86922a883"),
+    name: 'kahani 2',
+    rating: 5,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5ca453ef2952ebdd7ae2a92f"),
+    name: 'Kesari',
+    rating: 6,
+    ryear: 2019,
+    numy: 5
+  },
+  {
+    _id: ObjectId("5bf6a36f57b2d4cc676c7a95"),
+    name: 'Andhadhund',
+    rating: 4,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("5aaa31ee639395f86922a87f"),
+    name: '3 idiots',
+    rating: 3,
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("660c29e847e155487f7cc956"),
+    name: 'titanic',
+    ryear: null,
+    numy: null
+  },
+  {
+    _id: ObjectId("660d20bf54cf913e506e7c2d"),
+    name: 'rrr',
+    rating: 'three',
+    ryear: null,
+    numy: null
+  }
+]
+Type "it" for more
+iacsd0324> db.movie.aggregate([
+...   {$group:{_id:null,sump:{$sum:'$price'},
+...   minp:{$min,'$price'},maxp:{$max:'$price},
+Uncaught:
+SyntaxError: Unexpected token (3:21)
+
+  1 | db.movie.aggregate([
+  2 |   {$group:{_id:null,sump:{$sum:'$price'},
+> 3 |   minp:{$min,'$price'},maxp:{$max:'$price},
+    |                      ^
+  4 |
+
+iacsd0324>   count:{$sum:1}}}
+Uncaught:
+SyntaxError: Unexpected token (1:16)
+
+> 1 |   count:{$sum:1}}}
+    |                 ^
+  2 |
+
+iacsd0324> db.movie.aggregate([
+...   {$group:{_id:null,sump:{$sum:'$price'},
+...   minp:{$min,'$price'},maxp:{$max:'$price'},
+Uncaught:
+SyntaxError: Unexpected token (3:21)
+
+  1 | db.movie.aggregate([
+  2 |   {$group:{_id:null,sump:{$sum:'$price'},
+> 3 |   minp:{$min,'$price'},maxp:{$max:'$price'},
+    |                      ^
+  4 |
+
+iacsd0324>   count:{$sum:1}}}
+Uncaught:
+SyntaxError: Unexpected token (1:16)
+
+> 1 |   count:{$sum:1}}}
+    |                 ^
+  2 |
+
+iacsd0324> db.movie.aggregate([ {$group:{_id:null,sump:{$sum:'$price'}}}]);
+[ { _id: null, sump: 7836 } ]
+iacsd0324> db.movie.aggregate([ {$group:{_id:null,sump:{$sum:'$price'}, minp:{$min,'$price'}}}]);
+Uncaught:
+SyntaxError: Unexpected token (1:80)
+
+> 1 | db.movie.aggregate([ {$group:{_id:null,sump:{$sum:'$price'}, minp:{$min,'$price'}}}]);
+    |                                                                                 ^
+  2 |
+
+iacsd0324> db.movie.aggregate([ {$group:{_id:null,sump:{$sum:'$price'}, minp:{$min:'$price'}}}]);
+[ { _id: null, sump: 7836, minp: 200 } ]
+iacsd0324> db.movie.aggregate([ {$group:{_id:null,sump:{$sum:'$price'}, minp:{$min:'$price'},maxp:{$max:'$price'},
+...   count:{$sum:1}}}]);
+[
+  {
+    _id: null,
+    sump: 7836,
+    minp: 200,
+    maxp: 825.0000000000001,
+    count: 21
+  }
+]
+iacsd0324> db.movie.aggregate([{ $group: { _id: '$rating', sump: { $sum: '$price' }, minp: { $min: '$price' }, maxp: { $max: '$price' }, count: { $sum: 1 } } }]);
+[
+  { _id: 3, sump: 1912, minp: 200, maxp: 825.0000000000001, count: 4 },
+  { _id: null, sump: 1150, minp: 220, maxp: 480, count: 3 },
+  { _id: 10, sump: 510, minp: 510, maxp: 510, count: 1 },
+  { _id: 18, sump: 400, minp: 400, maxp: 400, count: 1 },
+  { _id: 4.3, sump: 474, minp: 474, maxp: 474, count: 1 },
+  { _id: 4, sump: 400, minp: 400, maxp: 400, count: 2 },
+  { _id: 6, sump: 1050, minp: 350, maxp: 350, count: 3 },
+  { _id: 13, sump: 540, minp: 540, maxp: 540, count: 1 },
+  { _id: 'three', sump: 300, minp: 300, maxp: 300, count: 1 },
+  { _id: 5, sump: 550, minp: 200, maxp: 350, count: 3 },
+  { _id: 16, sump: 550, minp: 550, maxp: 550, count: 1 }
+]
+iacsd0324> db.movie.aggregate([{ $group: { _id: '$rating', sump: { $sum: '$price' }, minp: { $min: '$price' }, maxp: { $max: '$price' }, count: { $sum: 1 } } },{$sort:{_id:-1}}]);
+[
+  { _id: 'three', sump: 300, minp: 300, maxp: 300, count: 1 },
+  { _id: 18, sump: 400, minp: 400, maxp: 400, count: 1 },
+  { _id: 16, sump: 550, minp: 550, maxp: 550, count: 1 },
+  { _id: 13, sump: 540, minp: 540, maxp: 540, count: 1 },
+  { _id: 10, sump: 510, minp: 510, maxp: 510, count: 1 },
+  { _id: 6, sump: 1050, minp: 350, maxp: 350, count: 3 },
+  { _id: 5, sump: 550, minp: 200, maxp: 350, count: 3 },
+  { _id: 4.3, sump: 474, minp: 474, maxp: 474, count: 1 },
+  { _id: 4, sump: 400, minp: 400, maxp: 400, count: 2 },
+  { _id: 3, sump: 1912, minp: 200, maxp: 825.0000000000001, count: 4 },
+  { _id: null, sump: 1150, minp: 220, maxp: 480, count: 3 }
+]
+iacsd0324> db.movie.aggregate([{ $group: { _id: '$rating', sump: { $sum: '$price' }, minp: { $min: '$price' }, maxp: { $max: '$price' }, count: { $sum: 1 } } },{$sort:{_id:-1}},{$limit:2}]);
+[
+  { _id: 'three', sump: 300, minp: 300, maxp: 300, count: 1 },
+  { _id: 18, sump: 400, minp: 400, maxp: 400, count: 1 }
+]
+iacsd0324> show collections
+movie
+restaurent
+iacsd0324> use test
+switched to db test
+test> show collections
+emp
+emptab1
+student
+students3
+test> db.students3.find();
+[
+  {
+    _id: 1,
+    grades: [
+      { grade: 84, mean: 75, std: 6 },
+      { grade: 85, mean: 100, std: 4 },
+      { grade: 87, mean: 100, std: 6 }
+    ]
+  },
+  {
+    _id: 2,
+    grades: [
+      { grade: 94, mean: 100, std: 6 },
+      { grade: 87, mean: 100, std: 3 },
+      { grade: 85, mean: 100, std: 4 }
+    ]
+  }
+]
+test> db.students3.aggregate([{$unwind:'$grades'}])
+[
+  { _id: 1, grades: { grade: 84, mean: 75, std: 6 } },
+  { _id: 1, grades: { grade: 85, mean: 100, std: 4 } },
+  { _id: 1, grades: { grade: 87, mean: 100, std: 6 } },
+  { _id: 2, grades: { grade: 94, mean: 100, std: 6 } },
+  { _id: 2, grades: { grade: 87, mean: 100, std: 3 } },
+  { _id: 2, grades: { grade: 85, mean: 100, std: 4 } }
+]
+test> db.students3.aggregate([{$unwind:'$grades'},{$match:{'grades.std':6}}])
+[
+  { _id: 1, grades: { grade: 84, mean: 75, std: 6 } },
+  { _id: 1, grades: { grade: 87, mean: 100, std: 6 } },
+  { _id: 2, grades: { grade: 94, mean: 100, std: 6 } }
+]
+test>

@@ -1,0 +1,119 @@
+------to update data in mongodb
+
+update: this function is used to to update one or more documents
+updateOne : this is used to update only one matching document
+updateMany:this is used to update all matching documnet
+
+updateMany({query},{update action})
+updateOne({query},{update action})
+update({query},
+      {update action},
+	  {multi:true,upsert:true,arrayFilters:[]})
+
+what update operation
+1. add new key-value pair--- $set, $min, $max
+2. delete existing key------ $unset
+3. overwrite the value of the key --- $set,$min, $max
+4. increase or decrease the value of key --- $inc, $mul 
+5. to assign current date ---$currentDate
+6. to rename the existing key ---$rename
+
+If there is a array of values
+1. add a new value array  $push---> $each, $position
+2. delete a value from array  $pop,$pull
+3. overwrrite 
+
+
+
+-----to increase the  price  by 200
+-----in $inc if the value is +ve then it will add, but
+-----if it is -ve then it will subtrcat
+db.movie.updateMany({price:{$nin:[null],$exists:true}},{$inc:{price:-200}});
+
+ 
+----and overwrite ticke_no value by 100
+db.movie.updateMany({name:'padmavat'},{$set:{ticket_num:100}})
+
+----to increase the  price  by 200 
+----and overwrite ticke_no value by 100
+db.movie.updateMany({name:/^p/},{$inc:{price:200},
+         $set:{ticket_no:100},
+		 $currentDate:{'lastmodified':true}});
+		 
+-----to remove ticket_num key from all 
+------movies with name starts with p
+db.movie.updateMany({name:/^p/},{$unset:{ticket_num:''}})
+
+----to increase the  price  by 10%
+-----in $inc if the value is +ve then it will add, but
+-----if it is -ve then it will subtrcat
+db.movie.updateMany({name:/^p/}},
+{$mul:{price:1.10}});
+
+600
+-----to update price to 450, if the current price is < 450
+---if any price < 450, then overwrite, otherwise kep it as it is
+db.movie.update({},{$max:{price:450}},{multi:true})
+
+4
+-----to update rating to 3, if the current rating >3
+$min means, if any rating is >3, then replace it with 3
+db.movie.update({name:/^p/},{$min:{rating:3}},{multi:true})
+
+----- to change the lastmodified ky to lastchange
+$rename operator will cj\hange key lastmodified to lastchange
+db.movie.updateMany({name:/^p/},
+{$rename:{'lastmodified':'lastchange'}})
+
+
+
+------upsert the following record
+upsert means update is exists, otherwise insert
+
+db.movie.update({name:'kashmir files'},
+{$set:{price:300},$inc:{rating:3}},
+{multi:true,upsert:true})
+
+
+
+----- add new actor in 'kashmir files'
+db.movie.find({name:'kashmir files'},{$push:{actor:'anupam kher'}})
+
+------add anupam kher at the end in actor array 
+-----of kashmir files
+db.movie.update({name:'kashmir files'},
+ {$push:{actor:'anupam kher'})
+ 
+ 
+ ------add pallavi joshi and chinamay 
+---- at the end in actor array of kashmir files
+db.movie.update({name:'kashmir files'},
+ {$push:{actor:{$each:['pallavi joshi','chinamay']}})
+ 
+ 
+ ------add xxxx and zzzzzz at the oth index position in actor array 
+ ----of kashmir files
+db.movie.update({name:'kashmir files'},
+ {$push:{actor:{$each:['xxxx','zzzzzz'],$position:0}})
+
+
+ ------add ppppp at the 3rd index position in actor array 
+ ----of kashmir files
+db.movie.update({name:'kashmir files'},
+ {$push:{actor:{$each:['ppppp'],$position:3}})
+ 
+----add 'yyyy' at 2 nd index position in actor array 
+of file kashmir files
+ db.movie.update({name:'kashmir files'},
+ {$push:{actor:{$each:['yyyy'],$position:2}}})
+ 
+-----to delete value from actor array from the end
+{$pop:{actor:1}  ---$pop will delete last value from actor array
+db.movie.update({name:'kashmir files'},
+ {$pop:{actor:1}})
+ 
+ 
+ -----to delete value from actor array from the end
+{$pop:{actor:1}  ---$pop will delete last value from actor array
+db.movie.update({name:'kashmir files'},
+ {$pop:{actor:-1}})
